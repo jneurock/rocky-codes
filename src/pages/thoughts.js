@@ -1,6 +1,7 @@
 import Page from '../components/page';
 import React from 'react';
 import ThoughtPreview from '../components/thoughts/preview';
+import { graphql } from 'gatsby';
 
 /**
   TODO:
