@@ -1,3 +1,15 @@
+a {
+  @include link-reset($color: $color, $text-decoration: none);
+
+  border-bottom: 4px solid $color;
+  display: inline-block;
+
+  &:hover {
+    border-bottom-color: darken($color, 16%);
+    color: darken($color, 16%);
+  }
+}
+
 h1,
 h2,
 h3,
@@ -11,19 +23,35 @@ h6 {
 
 h1 {
   font-family: Montserrat, sans-serif;
-  font-size: 6.4rem;
+  font-size: 4.2rem;
+
+  @include media-lg() {
+    font-size: 6.4rem;
+  }
 }
 
 h2 {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
+
+  @include media-lg() {
+    font-size: 3.2rem;
+  }
 }
 
 h3 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
+
+  @include media-lg() {
+    font-size: 2.8rem;
+  }
 }
 
 h4 {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
+
+  @include media-lg() {
+    font-size: 2.4rem;
+  }
 }
 
 h5 {
@@ -37,6 +65,19 @@ h6 {
 hr {
   // TODO: Make this a color var
   border-top: 1px solid #c1c1c1;
+}
+
+p {
+  line-height: 2.5rem;
+  margin: 0 0 1.3rem;
+
+  @include media-lg() {
+    line-height: 3rem;
+  }
+
+  a {
+    line-height: 2rem;
+  }
 }
 
 .subtitle {

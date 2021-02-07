@@ -16,6 +16,12 @@
   padding: 0;
 }
 
+.hide-sm {
+  @include media-sm() {
+    display: none;
+  }
+}
+
 .upcase {
   text-transform: uppercase;
 }

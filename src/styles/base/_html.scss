@@ -1,0 +1,29 @@
+html {
+  font-size: 10px;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $bg-color-light;
+  background-image: url("/images/symbols-light.svg");
+  background-repeat: repeat-x;
+  color: $fg-color-light;
+  font-family: Nunito, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+
+  #{$html-color-mode-dark} & {
+    background-color: $bg-color-dark;
+    color: $fg-color-dark;
+    background-image: url("/images/symbols-dark.svg");
+  }
+}
+
+main {
+  margin-bottom: 7.2rem; // TODO: Abstract this value
+}

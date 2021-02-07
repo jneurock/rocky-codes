@@ -5,8 +5,8 @@ export default function Intro() {
     <p className="intro">
       Hi, my name is Rocky. I built this site so I could share thoughts about
       software engineering and leadership, write about my own personal approach
-      and share my projects. I love to meet new people so feel free to connect
-      with me!
+      and share my projects. <span className="hide-sm">I love to meet new people
+      so feel free to connect with me!</span>
     </p>
   );
 }

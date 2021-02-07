@@ -1,7 +1,7 @@
 .site-nav {
   margin-bottom: 2rem;
 
-  // TODO: Could be a utility class?
+  // TODO: Could be a utility class? Better to be a mixin, if needed.
   ul {
     list-style: none;
     margin: 0;
@@ -16,8 +16,16 @@
   border-bottom: none;
   border-radius: 4px;
   font-size: 1.5rem;
-  margin-right: 2rem;
-  padding: 0.5rem 2rem;
+  margin: 2rem 2rem 0 0;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  width: 9rem;
+  
+  @include media-lg() {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: auto;
+  }
 
   &.active,
   &.active:hover {

@@ -1,3 +1,17 @@
+// Breakpoints
+
+@mixin media-sm() {
+  @media not all and (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin media-lg() {
+  @media (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
 // Links
 
 @mixin link-reset($color, $text-decoration: null) {

@@ -1,15 +1,19 @@
 .flex {
   display: flex;
 
-  &-direction-column {
+  &--direction-column {
     flex-direction: column;
   }
 
-  &-grow-1 {
+  &--grow-1 {
     flex-grow: 1;
   }
 
-  &-space-between {
+  &--space-between {
     justify-content: space-between;
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
   }
 }

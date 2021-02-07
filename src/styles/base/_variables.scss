@@ -1,12 +1,35 @@
+// Breakpoints
+
+$breakpoint-lg: 1000px;
+
+// Color mode
+
+$html-color-mode-dark: "html[data-color-mode='dark']";
+$html-color-mode-laser: "html[data-color-mode='laser']";
+
+// Raw colors
+
+$blue: #7ca5c3;
+$dark: #212121;
+$light: #fff;
+$light-gray: #f1f1f1;
+$light-shade-1: #c1c1c1;
+$light-shade-2: #d1d1d1;
+$purple: #8e7cc3;
+
 // Colors - https://colors.muz.li/palette/8e7cc3/5e5e88/9a7cc3/7ca5c3/577388
 
-$bg-color-light: #f1f1f1;
-$bg-color-secondary-light: #212121;
+$bg-color-dark: $dark;
+$bg-color-light: $light-gray;
+$bg-color-secondary-light: $dark;
 
-$color: #8e7cc3;
-$color-secondary: #7ca5c3;
-$color-tertiary: #577388;
+$color: $purple;
+$color-secondary: $blue;
 
-$fg-color-dark: #fff;
-$fg-color-light: #212121;
-$fg-color-secondary-light: #d1d1d1;
+$fg-color-dark: $light;
+$fg-color-light: $dark;
+$fg-color-secondary-light: $light-shade-2;
+
+// Sizing
+
+$max-content-width: 64rem;

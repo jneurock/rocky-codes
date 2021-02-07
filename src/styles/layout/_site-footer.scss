@@ -3,7 +3,7 @@
   // TODO: Make this a color var
   border-top: 1px solid #e1e1e1;
   color: $fg-color-secondary-light;
-  padding: 3rem;
+  padding: 3rem 0;
 
   a {
     @include link-reset($color: $fg-color-secondary-light);
@@ -15,13 +15,22 @@
   }
 
   &__description {
-    max-width: 50%;
+    order: 1;
+
+    @include media-lg() {
+      order: 0;
+    }
   }
 
   &__social-menu {
     list-style: none;
     margin: 0;
+    order: 0;
     padding: 0;
+
+    @include media-lg() {
+      order: 1;
+    }
   }
 
   &__social-menu-item {

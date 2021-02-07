@@ -1,0 +1,18 @@
+.container {
+  min-height: 100vh;
+
+  &__content-wrapper {
+    padding: 0 2rem;
+
+    @include media-lg() {
+      margin: 0 auto;
+      width: 96rem;
+    }
+  }
+}
+
+.content {
+  @include media-lg() {
+    width: 64rem;
+  }
+}
