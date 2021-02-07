@@ -1,0 +1,19 @@
+// TODO: Remove link styles from h1
+
+.site-header {
+  margin-bottom: 2rem;
+  padding-top: 7.2rem;
+
+  .subtitle {
+    margin-bottom: 2rem; // TODO: Utility class?
+  }
+}
+
+.site-header__link {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.site-header__name {
+  margin: 0 0 1.3rem;
+}

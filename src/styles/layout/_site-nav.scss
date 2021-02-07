@@ -1,0 +1,31 @@
+.site-nav {
+  margin-bottom: 2rem;
+
+  // TODO: Could be a utility class?
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.site-nav__link {
+  @include link-reset($color: $fg-color-dark);
+
+  background-color: $color;
+  border-bottom: none;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  padding: 0.5rem 2rem;
+
+  &.active,
+  &.active:hover {
+    background-color: $bg-color-secondary-light;
+    color: $fg-color-dark;
+  }
+
+  &:hover {
+    background-color: lighten($color, 7%);
+  }
+}

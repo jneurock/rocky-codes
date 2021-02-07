@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  height="250"
+  width="780"
+  version="1.1"
+  viewBox="0 0 780 250"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g>
+    <g fill="#8e7cc3" font-family="Courier">
+      <g>
+        <text transform="matrix(.97565 -.26142 .25624 .9563 0 0)" x="3.3309145" y="64.765213" fill-opacity=".46667" font-size="26.219px" style="line-height:1.25" xml:space="preserve">
+          <tspan x="3.3309145" y="64.765213" fill="#8e7cc3" fill-opacity=".46667" font-family="Courier" font-size="22px" stroke-width="1.0924">{}</tspan>
+        </text>
+        <text transform="matrix(.97565 .26142 -.25624 .9563 0 0)" x="175.26276" y="7.0384216" fill-opacity=".46667" font-size="22px" style="line-height:1.25" xml:space="preserve">
+          <tspan x="175.26276" y="7.0384216" fill="#8e7cc3" fill-opacity=".46667" font-family="Courier" font-size="22px" stroke-width="1.0924">&lt;/&gt;</tspan>
+        </text>
+        <text transform="scale(1.0101 .99004)" x="27.375069" y="116.89136" fill-opacity=".33333" font-size="18px" style="line-height:1.25" xml:space="preserve">
+          <tspan x="27.375069" y="116.89136" fill="#8e7cc3" fill-opacity=".33333" font-family="Courier" font-size="18px" stroke-width="1.0924">&gt;&gt;</tspan>
+        </text>
+        <text transform="scale(1.0101 .99004)" x="407.42413" y="77.650635" fill-opacity=".4" font-size="20px" style="line-height:1.25" xml:space="preserve">
+          <tspan x="407.42413" y="77.650635" fill="#8e7cc3" fill-opacity=".4" font-family="Courier" font-size="20px" stroke-width="1.0924">.*</tspan>
+        </text>
+        <text transform="matrix(.97565 .26142 -.25624 .9563 0 0)" x="75.718582" y="154.32472" fill-opacity=".2" font-size="14px" style="line-height:1.25" xml:space="preserve">
+          <tspan x="75.718582" y="154.32472" fill="#8e7cc3" fill-opacity=".2" font-family="Courier" font-size="14px" stroke-width="1.0924">0</tspan>
+        </text>
+        <text transform="scale(1.0101 .99004)" x="177.09206" y="117.15501" fill-opacity=".33333" font-size="18px" style="line-height:1.25" xml:space="preserve">
+          <tspan x="177.09206" y="117.15501" fill="#8e7cc3" fill-opacity=".33333" font-family="Courier" font-size="18px" stroke-width="1.0924">//</tspan>
+        </text>
+        <text transform="matrix(.97565 -.26142 .25624 .9563 0 0)" x="445.96454" y="185.21426" fill-opacity=".46667" font-size="22px" style="line-height:1.25" xml:space="preserve">
+          <tspan x="445.96454" y="185.21426" fill="#8e7cc3" fill-opacity=".46667" font-family="Courier" font-size="22px" stroke-width="1.0924">()</tspan>
+        </text>
+        <text transform="scale(1.0101 .99004)" x="185.10583" y="180.50902" fill-opacity=".2" font-size="14px" style="line-height:1.25" xml:space="preserve">
+          <tspan x="185.10583" y="180.50902" fill="#8e7cc3" fill-opacity=".2" font-family="Courier" font-size="14px" stroke-width="1.0924">1</tspan>
+        </text>
+        <text transform="matrix(1.0101 0 0 .99004 0 -8)" x="335.64911" y="177.89417" fill-opacity=".2" font-size="14px" opacity="1" style="line-height:1.25" xml:space="preserve">
+          <tspan x="335.64911" y="177.89417" fill="#8e7cc3" fill-opacity=".2" font-family="Courier" font-size="14px" stroke-width="1.0924">$</tspan>
+        </text>
+      </g>
+      <g>
+        <text transform="matrix(1.1034 0 0 1.0816 342.78 30.154)" x="-8.0468493" y="23.163988" fill-opacity=".46667" font-size="20.138px" opacity=".994" style="line-height:1.25" xml:space="preserve">
+          <tspan x="-8.0468493" y="23.163988" fill="#8e7cc3" fill-opacity=".46667" font-family="Courier" font-size="20.138px">[]</tspan>
+        </text>
+        <text transform="matrix(1.1034 0 0 1.0816 104.67 119.83)" x="-3.8867064" y="26.640539" fill-opacity=".26667" font-size="14.646px" opacity=".994" style="line-height:1.25" xml:space="preserve">
+          <tspan x="-3.8867064" y="26.640539" fill="#8e7cc3" fill-opacity=".26667" font-family="Courier" font-size="14.646px">${}</tspan>
+        </text>
+        <text transform="matrix(1.1034 0 0 1.0816 331.51 85.16)" x="-0.11718713" y="27.324131" fill-opacity=".33333" font-size="16.477px" opacity=".994" style="line-height:1.25" xml:space="preserve">
+          <tspan x="-0.11718713" y="27.324131" fill="#8e7cc3" fill-opacity=".33333" font-family="Courier" font-size="16.477px">#{}</tspan>
+        </text>
+        <text transform="matrix(1.1034 0 0 1.0816 269.18 130.36)" x="-0.11718713" y="27.324131" fill-opacity=".26667" font-size="14.646px" opacity=".994" style="line-height:1.25" xml:space="preserve">
+          <tspan x="-0.11718713" y="27.324131" fill="#8e7cc3" fill-opacity=".26667" font-family="Courier" font-size="14.646px">#</tspan>
+        </text>
+        <text transform="matrix(1.1034 0 0 1.0816 491.96 90.72)" x="-0.11692189" y="27.324358" fill-opacity=".33333" font-size="16.477px" opacity=".994" style="line-height:1.25" xml:space="preserve">
+          <tspan x="-0.11692189" y="27.324358" fill="#8e7cc3" fill-opacity=".33333" font-family="Courier" font-size="16.477px">^</tspan>
+        </text>
+        <text transform="matrix(1.1034 0 0 1.0816 104.71 52.031)" x="-1.9138815" y="22.636787" fill-opacity=".4" font-size="18.307px" opacity=".994" style="line-height:1.25" xml:space="preserve">
+          <tspan x="-1.9138815" y="22.636787" fill="#8e7cc3" fill-opacity=".4" font-family="Courier" font-size="18.307px">&amp;&amp;</tspan>
+        </text>
+        <text transform="matrix(1.1034 0 0 1.0816 263.91 47.944)" x="-1.9138815" y="22.636787" fill-opacity=".4" font-size="18.307px" opacity=".994" style="line-height:1.25" xml:space="preserve">
+          <tspan x="-1.9138815" y="22.636787" fill="#8e7cc3" fill-opacity=".4" font-family="Courier" font-size="18.307px">||</tspan>
+        </text>
+        <text transform="matrix(1.1034 0 0 1.0816 423.7 126.03)" x="-3.5154543" y="21.87508" fill-opacity=".26667" font-size="14.646px" opacity=".994" style="line-height:1.25" xml:space="preserve">
+          <tspan x="-3.5154543" y="21.87508" fill="#8e7cc3" fill-opacity=".26667" font-family="Courier" font-size="14.646px">+</tspan>
+        </text>
+        <text transform="matrix(1.1034 0 0 1.0816 493.11 155.28)" x="-1.9139771" y="22.636787" fill-opacity=".2" font-size="12.815px" opacity=".994" style="line-height:1.25" xml:space="preserve">
+          <tspan x="-1.9139771" y="22.636787" fill="#8e7cc3" fill-opacity=".2" font-family="Courier" font-size="12.815px">*</tspan>
+        </text>
+      </g>
+      <text transform="matrix(1.0101 0 0 .99004 557.93 55.831)" x="-4.0820312" y="11.582031" fill-opacity=".4" font-size="20px" opacity=".994" stroke-width="1.0924" style="line-height:1.25" xml:space="preserve">
+        <tspan x="-4.0820312" y="11.582031" fill="#8e7cc3" fill-opacity=".4" font-family="Courier" font-size="20px" stroke-width="1.0924">&lt;&lt;</tspan>
+      </text>
+      <text transform="matrix(1.1034 0 0 1.0816 572.66 136.25)" x="-3.5154543" y="21.87508" fill-opacity=".26667" font-size="14.646px" opacity=".994" style="line-height:1.25" xml:space="preserve">
+        <tspan x="-3.5154543" y="21.87508" fill="#8e7cc3" fill-opacity=".26667" font-family="Courier" font-size="14.646px">/</tspan>
+      </text>
+      <text transform="matrix(.97565 .26142 -.25624 .9563 634.08 41.816)" x="-4.1094847" y="13.116211" fill-opacity=".46667" font-size="22px" opacity=".994" stroke-width="1.0924" style="line-height:1.25" xml:space="preserve">
+        <tspan x="-4.1094847" y="13.116211" fill="#8e7cc3" fill-opacity=".46667" font-family="Courier" font-size="22px" stroke-width="1.0924">!=</tspan>
+      </text>
+      <text transform="matrix(1.1034 0 0 1.0816 631.3 86.187)" x="-0.11692189" y="27.324358" fill-opacity=".33333" font-size="16.477px" opacity=".994" style="line-height:1.25" xml:space="preserve">
+        <tspan x="-0.11692189" y="27.324358" fill="#8e7cc3" fill-opacity=".33333" font-family="Courier" font-size="16.477px">%</tspan>
+      </text>
+      <text transform="matrix(1.0658 -.28559 .27993 1.0447 637.41 144.78)" x="-1.9139771" y="22.636787" fill-opacity=".2" font-size="12.815px" opacity=".994" style="line-height:1.25" xml:space="preserve">
+        <tspan x="-1.9139771" y="22.636787" fill="#8e7cc3" fill-opacity=".2" font-family="Courier" font-size="12.815px">|</tspan>
+      </text>
+      <text transform="matrix(1.0101 0 0 .99004 712.8 65.841)" x="-4.0820312" y="11.582031" fill-opacity=".4" font-size="20px" opacity=".994" stroke-width="1.0924" style="line-height:1.25" xml:space="preserve">
+        <tspan x="-4.0820312" y="11.582031" fill="#8e7cc3" fill-opacity=".4" font-family="Courier" font-size="20px" stroke-width="1.0924">+=</tspan>
+      </text>
+      <text transform="matrix(1.1034 0 0 1.0816 721.84 126.02)" x="-3.5154543" y="21.87508" fill-opacity=".26667" font-size="14.646px" opacity=".994" style="line-height:1.25" xml:space="preserve">
+        <tspan x="-3.5154543" y="21.87508" fill="#8e7cc3" fill-opacity=".26667" font-family="Courier" font-size="14.646px">=&gt;</tspan>
+      </text>
+    </g>
+    <path d="m0.37067 2.3404-0.27754 18.425a41.731 59.735 89.177 0 0 39.316 10.414 41.731 59.735 89.177 0 0 27.482-4.654 41.731 59.735 89.177 0 0 34.078 7.5151 41.731 59.735 89.177 0 0 38.014-9.4609 41.731 59.735 89.177 0 0 32.133 6.5998 41.731 59.735 89.177 0 0 24.595-3.6839 41.731 59.735 89.177 0 0 32.011 6.545 41.731 59.735 89.177 0 0 39.097-10.093 41.731 59.735 89.177 0 0 38.795 10.093 41.731 59.735 89.177 0 0 39.582-10.388 41.731 59.735 89.177 0 0 35.509 8.2417 41.731 59.735 89.177 0 0 16.025-1.5268 41.731 59.735 89.177 0 0 2.8776 2.0307 41.731 59.735 89.177 0 0 35.755-8.2417 41.731 59.735 89.177 0 0 39.271 10.388 41.731 59.735 89.177 0 0 39.099-10.093 41.731 59.735 89.177 0 0 38.793 10.093 41.731 59.735 89.177 0 0 32.208-6.545 41.731 59.735 89.177 0 0 24.484 3.6839 41.731 59.735 89.177 0 0 32.332-6.5998 41.731 59.735 89.177 0 0 37.727 9.4609 41.731 59.735 89.177 0 0 34.307-7.5151 41.731 59.735 89.177 0 0 27.34 4.654 41.731 59.735 89.177 0 0 39.158-10.129l0.28943-19.214z" fill="#dfdfdf" opacity="1" stop-color="#000000" style="font-variation-settings:normal"/>
+    <path d="m0.36755 0.34059-0.27754 18.425a41.731 59.735 89.177 0 0 39.316 10.414 41.731 59.735 89.177 0 0 27.482-4.654 41.731 59.735 89.177 0 0 34.078 7.5151 41.731 59.735 89.177 0 0 38.014-9.4609 41.731 59.735 89.177 0 0 32.133 6.5998 41.731 59.735 89.177 0 0 24.595-3.6839 41.731 59.735 89.177 0 0 32.011 6.545 41.731 59.735 89.177 0 0 39.097-10.093 41.731 59.735 89.177 0 0 38.795 10.093 41.731 59.735 89.177 0 0 39.582-10.388 41.731 59.735 89.177 0 0 35.509 8.2417 41.731 59.735 89.177 0 0 16.025-1.5268 41.731 59.735 89.177 0 0 2.8776 2.0307 41.731 59.735 89.177 0 0 35.755-8.2417 41.731 59.735 89.177 0 0 39.271 10.388 41.731 59.735 89.177 0 0 39.099-10.093 41.731 59.735 89.177 0 0 38.793 10.093 41.731 59.735 89.177 0 0 32.208-6.545 41.731 59.735 89.177 0 0 24.484 3.6839 41.731 59.735 89.177 0 0 32.332-6.5998 41.731 59.735 89.177 0 0 37.727 9.4609 41.731 59.735 89.177 0 0 34.307-7.5151 41.731 59.735 89.177 0 0 27.34 4.654 41.731 59.735 89.177 0 0 39.158-10.129l0.28943-19.214z" fill="#fff" opacity="1" stop-color="#000000" style="font-variation-settings:normal"/>
+  </g>
+</svg>

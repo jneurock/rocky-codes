@@ -1,0 +1,60 @@
+// TODO: Abstract body styles
+// TODO: Go mobile-first or figure out fluidity
+// TODO: Support dark mode
+// TODO: Add laser mode
+// TODO: Check out styled components or ways to write component Sass in-place
+
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/fonts";
+@import "./base/reset";
+@import "./base/typography";
+@import "./layout/site-nav";
+@import "./layout/site-footer";
+@import "./layout/site-header";
+@import "./utility/flex";
+@import "./utility/typography";
+@import "./components/intro";
+@import "./components/page";
+@import "./components/thoughts";
+
+a {
+  @include link-reset($color: $color, $text-decoration: none);
+
+  border-bottom: 4px solid $color;
+  display: inline-block;
+
+  &:hover {
+    border-bottom-color: darken($color, 16%);
+    color: darken($color, 16%);
+  }
+}
+
+body {
+  background-color: $bg-color-light;
+  background-image: url("/images/symbols-light.svg");
+  background-repeat: repeat-x;
+  color: $fg-color-light;
+  font-family: Nunito, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+main {
+  margin-bottom: 3rem;
+}
+
+.container {
+  min-height: 100vh;
+
+  &__content-wrapper {
+    margin: 0 auto;
+    width: 96rem;
+    padding: 0 2rem;
+  }
+}
+
+// TODO: Think of a better name for this
+.content {
+  width: 64rem;
+}

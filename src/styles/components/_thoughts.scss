@@ -1,0 +1,36 @@
+.thought-date {
+  color: lighten($fg-color-light, 39%);
+  margin-bottom: 1rem;
+}
+
+.thought-link {
+  @include link-reset(
+    $color: darken($color-secondary, 16%),
+    $text-decoration: none
+  );
+
+  border-bottom-color: $color-secondary;
+
+  &:hover {
+    border-bottom-color: darken($color-secondary, 16%);
+    color: darken($color-secondary, 16%);
+  }
+
+  &--heading {
+    @include link-reset($color: $fg-color-light);
+
+    border-bottom: none;
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+}
+
+.thought-preview {
+  margin-bottom: 6rem;
+}
+
+.thought-title {
+  margin-bottom: 1rem;
+}

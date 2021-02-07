@@ -1,0 +1,15 @@
+.flex {
+  display: flex;
+
+  &-direction-column {
+    flex-direction: column;
+  }
+
+  &-grow-1 {
+    flex-grow: 1;
+  }
+
+  &-space-between {
+    justify-content: space-between;
+  }
+}

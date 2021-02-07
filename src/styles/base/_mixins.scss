@@ -1,0 +1,14 @@
+// Links
+
+@mixin link-reset($color, $text-decoration: null) {
+  &:active,
+  &:focus,
+  &:link,
+  &:visited  {
+    color: $color;
+
+    @if $text-decoration {
+      text-decoration: $text-decoration;
+    }
+  }
+}

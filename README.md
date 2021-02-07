@@ -1,3 +1,27 @@
+# TODO:
+
+Here's a high-level TODO list:
+* Set up Netlify
+* Set up DNS to work with Netlify
+  * Watch out for SSL issues and the www subdomain
+  * Pretty sure Namecheap has A name records
+* Check out styled components (if that means what I think it means)
+* Mobile friendly styles
+* Color modes (system, light, dark, laser)
+* Check Lighthouse score
+* Check accessibility
+* Add tests
+* Add social icons to footer
+* Write about approach to things
+* Add web resume
+  * Maybe add page size selector or add download links for each size
+* Maybe add photo to intro paragraph
+* Write some more posts
+* Set up correct site metadata for Facebook and Twitter sharing
+* See if an svg minification or optimization plugin can be added for the build
+* Add tags to posts and allow Thoughts page to be filtered by them
+* Share the new site after good smoke testing
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">

@@ -1,0 +1,44 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+  font-size: 6.4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.9rem;
+}
+
+hr {
+  // TODO: Make this a color var
+  border-top: 1px solid #c1c1c1;
+}
+
+.subtitle {
+  font-size: 1.9rem;
+}

@@ -1,0 +1,21 @@
+.color-fg {
+  color: $fg-color-light;
+}
+
+.color-primary {
+  color: $color;
+}
+
+.color-secondary {
+  color: $color-secondary;
+}
+
+.list-style-none {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.upcase {
+  text-transform: uppercase;
+}
