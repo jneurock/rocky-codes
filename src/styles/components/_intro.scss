@@ -2,3 +2,16 @@
   // TODO: Abstract this, if it makes sense as a common pattern
   margin-bottom: 7.2rem;
 }
+
+.intro__photo {
+  border: 4px solid $color;
+  border-radius: 50%;
+  float: right;
+  height: 7.2rem;
+  width: 7.2rem;
+
+  @include media-lg() {
+    height: 10rem;
+    width: 10rem;
+  }
+}
