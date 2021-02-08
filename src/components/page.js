@@ -1,12 +1,10 @@
 import Layout from '../components/layout';
 import React from 'react';
-import { Helmet } from 'react-helmet';
 
-export default function Page({ children, html, title }) {
+export default function Page({ children, html, meta, title }) {
   return (
-    <Layout>
-      <Helmet title={`rocky.codes - ${title}`} />
-      <h2 class="page__heading">
+    <Layout meta={{ ...meta, title }}>
+      <h2 className="page__heading">
         {title}
       </h2>
       {children}

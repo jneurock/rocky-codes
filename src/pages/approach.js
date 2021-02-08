@@ -3,10 +3,13 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 export default function About({ data }) {
-  const { markdownRemark: page } = data;
+  const {
+    markdownRemark: { frontmatter: { title }, html },
+    site: { siteMetadata }
+  } = data;
 
   return (
-    <Page html={page.html} title={page.frontmatter.title}>
+    <Page html={html} meta={{ siteMetadata }} title={title}>
       Hello, world!
     </Page>
   );
@@ -21,6 +24,15 @@ export const pageQuery = graphql`
         title
       }
       html
+    }
+    site {
+      siteMetadata {
+        description
+        image
+        siteUrl
+        title
+        twitterCreator
+      }
     }
   }
 `;

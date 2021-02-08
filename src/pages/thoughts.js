@@ -4,10 +4,13 @@ import ThoughtPreview from '../components/thoughts/preview';
 import { graphql } from 'gatsby';
 
 export default function Thoughts({ data }) {
-  const { edges: thoughts } = data.allMarkdownRemark;
+  const {
+    allMarkdownRemark: { edges: thoughts },
+    site: { siteMetadata }
+  } = data;
 
   return (
-    <Page title="Thoughts">
+    <Page meta={{ siteMetadata }} title="Thoughts">
       <section>
         {
           thoughts.map(function({ node: thought })  {
@@ -42,6 +45,15 @@ export const pageQuery = graphql`
       pageInfo {
         hasNextPage
         hasPreviousPage
+      }
+    }
+    site {
+      siteMetadata {
+        description
+        image
+        siteUrl
+        title
+        twitterCreator
       }
     }
   }

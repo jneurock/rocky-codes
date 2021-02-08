@@ -1,16 +1,15 @@
 import Layout from '../components/layout';
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 
 export default function Template({ data }) {
-  const { markdownRemark: thought } = data;
+  const { markdownRemark: thought, site: { siteMetadata } } = data;
+  const { excerpt: description, frontmatter: { title } } = thought;
 
   return (
-    <Layout>
-      <Helmet title={`rocky.codes - ${thought.frontmatter.title}`} />
+    <Layout meta={{ description, siteMetadata, title, type: 'article' }}>
       <article>
-        <h2 class="thought-title">
+        <h2 className="thought-title">
           {thought.frontmatter.title}
         </h2>
         <section dangerouslySetInnerHTML={{ __html: thought.html }} />
@@ -22,12 +21,22 @@ export default function Template({ data }) {
 export const pageQuery = graphql`
   query ThoughtByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
+      excerpt(pruneLength: 250)
       frontmatter {
         date(formatString: "YYYY-MM-DD")
         path
         title
       }
       html
+    }
+    site {
+      siteMetadata {
+        description
+        image
+        siteUrl
+        title
+        twitterCreator
+      }
     }
   }
 `;

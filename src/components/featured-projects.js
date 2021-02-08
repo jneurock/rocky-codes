@@ -8,9 +8,9 @@ export default function FeaturedProjects({ projects }) {
 
   return (
     <section>
-      <header class="margin-btm-2x">
+      <header className="margin-btm-2x">
         <h5>
-          Featured <span class="color-secondary">Projects</span>
+          Featured <span className="color-secondary">Projects</span>
         </h5>
         <hr />
       </header>
@@ -20,6 +20,7 @@ export default function FeaturedProjects({ projects }) {
             <Card
               description={project.description}
               imageSrc={project.image}
+              key={project.title}
               title={project.title}
               type={project.type}
               url={project.url}

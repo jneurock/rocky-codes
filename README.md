@@ -1,11 +1,10 @@
 # TODO:
 
 Here's a high-level TODO list:
-  * Color modes (system, light, dark, laser)
-    * Store with local storage
-  * Set up correct site metadata for Facebook and Twitter sharing
   * Maybe add photo to intro paragraph
   * See if an svg minification or optimization plugin can be added for the build
+  * Color modes (system, light, dark, laser)
+    * Store with local storage
   * Write about approach to things
   * Add tests
     * Is there anything to test?

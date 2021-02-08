@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 export default function ThoughtHeader({ content }) {
   return (
     <header>
-      <div class="thought-date">
+      <div className="thought-date">
         <small>
           {content.frontmatter.date}
         </small>
@@ -14,7 +14,7 @@ export default function ThoughtHeader({ content }) {
         title={`Read ${content.frontmatter.title}`}
         to={content.frontmatter.path}
       >
-        <h3 class="thought-title">
+        <h3 className="thought-title">
           {content.frontmatter.title}
         </h3>
       </Link>

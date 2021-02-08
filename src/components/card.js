@@ -2,18 +2,18 @@ import React from 'react';
 
 export default function Card({ description, imageSrc, title, type, url }) {
   return (
-    <div class="card">
+    <div className="card">
       <a
         href={url}
         rel="noreferrer"
         target="_blank"
         title={`Check out ${title}`}
       >
-        <header class="card__header">
-          <img class="card__image" alt={title} src={imageSrc} />
+        <header className="card__header">
+          <img className="card__image" alt={title} src={imageSrc} />
         </header>
-        <section class="card__body">
-          <p class="card__title">
+        <section className="card__body">
+          <p className="card__title">
             <strong>
               {title}
             </strong>

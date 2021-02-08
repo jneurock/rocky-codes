@@ -8,8 +8,8 @@ import {
 
 export default function SocialMenu() {
   return (
-    <ul class="flex social-menu">
-      <li class="social-menu__item">
+    <ul className="flex social-menu">
+      <li className="social-menu__item">
         <a
           href="https://linkedin.com/in/jneurock"
           title="Connect with me on LinkedIn"
@@ -17,7 +17,7 @@ export default function SocialMenu() {
           <FontAwesomeIcon icon={linkedInIcon} />
         </a>
       </li>
-      <li class="site-footer__social-menu-item">
+      <li className="site-footer__social-menu-item">
         <a
           href="https://github.com/jneurock"
           title="Find me on GitHub"
@@ -25,7 +25,7 @@ export default function SocialMenu() {
           <FontAwesomeIcon icon={gitHubIcon} />
         </a>
       </li>
-      <li class="site-footer__social-menu-item">
+      <li className="site-footer__social-menu-item">
         <a
           href="https://twitter.com/rockyneurock"
           title="Follow me on Twitter"

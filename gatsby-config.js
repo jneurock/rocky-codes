@@ -1,7 +1,11 @@
 module.exports = {
   siteMetadata: {
     author: 'Rocky Neurock',
-    title: 'rocky.codes'
+    description: 'My name is Rocky. I built this site so I could share thoughts about software engineering and leadership, write about my own personal approach and share my projects.',
+    image: 'images/media-card.png',
+    siteUrl: 'https://rocky.codes',
+    title: 'rocky.codes',
+    twitterCreator: '@rockyneurock'
   },
   plugins: [
     'gatsby-plugin-catch-links',

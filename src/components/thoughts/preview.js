@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 
 export default function ThoughtPreview({ content }) {
   return (
-    <article class="thought-preview" key={content.id}>
+    <article className="thought-preview" key={content.id}>
       <Header content={content} />
       <section>
         <p>

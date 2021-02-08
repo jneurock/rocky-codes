@@ -3,16 +3,17 @@ import LatestThoughts from '../components/thoughts/latest';
 import Layout from '../components/layout';
 import FeaturedProjects from '../components/featured-projects';
 import React from 'react';
-import { Helmet } from 'react-helmet';
-import { graphql } from 'gatsby';
 import projects from '../fixtures/projects';
+import { graphql } from 'gatsby';
 
 export default function Index({ data }) {
-  const { edges: thoughts } = data.allMarkdownRemark;
+  const {
+    allMarkdownRemark: { edges: thoughts },
+    site: { siteMetadata }
+  } = data;
 
   return (
-    <Layout>
-      <Helmet title="rocky.codes" />
+    <Layout meta={{ siteMetadata }}>
       <Intro />
       <LatestThoughts thoughts={thoughts} />
       <FeaturedProjects projects={projects} />
@@ -37,6 +38,15 @@ export const pageQuery = graphql`
             title
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        description
+        image
+        siteUrl
+        title
+        twitterCreator
       }
     }
   }

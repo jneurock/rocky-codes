@@ -4,14 +4,14 @@ import { Link } from 'gatsby';
 
 export default function Header() {
   return (
-    <header class="site-header">
-      <section class="content">
+    <header className="site-header">
+      <section className="content">
         <Link className="site-header__link" title="rocky.codes | Home" to="/">
-          <h1 class="site-header__name">
-            rocky<span class="color-fg">.codes</span>
+          <h1 className="site-header__name">
+            rocky<span className="color-fg">.codes</span>
           </h1>
         </Link>
-        <p class="subtitle">
+        <p className="subtitle">
           Trying to share thoughts that offer something new.
         </p>
         <NavMenu />
