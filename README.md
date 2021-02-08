@@ -1,23 +1,23 @@
 # TODO:
 
 Here's a high-level TODO list:
-* Add projects to home page
-* Add social icons to footer
-* Write about approach to things
-* Color modes (system, light, dark, laser)
-* Add tests
-* Check Lighthouse score
-* Check accessibility
-* Set up correct site metadata for Facebook and Twitter sharing
-* Maybe add photo to intro paragraph
-* Set up Netlify
-* Set up DNS to work with Netlify
-  * Watch out for SSL issues and the www subdomain
-  * Pretty sure Namecheap has A name records
-* Write some more posts
-* See if an svg minification or optimization plugin can be added for the build
-* Add tags to posts and allow Thoughts page to be filtered by them
-* Share the new site after good smoke testing
+  * Color modes (system, light, dark, laser)
+    * Store with local storage
+  * Set up correct site metadata for Facebook and Twitter sharing
+  * Maybe add photo to intro paragraph
+  * See if an svg minification or optimization plugin can be added for the build
+  * Write about approach to things
+  * Add tests
+    * Is there anything to test?
+      * Maybe just some component rendering tests?
+  * Check Lighthouse score
+  * Check accessibility
+  * Write some more posts
+  * Update README
+  * Share the new site after good smoke testing
+  * Add tags to posts and allow Thoughts page to be filtered by them
+  * Add pagination to Thoughts page
+  * Add breadcrumbs to Thoughts
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">

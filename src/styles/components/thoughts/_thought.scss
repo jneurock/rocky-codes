@@ -29,6 +29,10 @@
 
 .thought-preview {
   margin-bottom: 6rem;
+
+  &:last-of-type {
+    margin-bottom: 3rem;
+  }
 }
 
 .thought-title {

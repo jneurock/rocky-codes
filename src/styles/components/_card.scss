@@ -1,0 +1,30 @@
+.card {
+  background-color: $card-bg-color;
+  border: 1px solid $divider-color;
+  border-radius: 4px;
+  width: 28rem;
+
+  a {
+    border: none;
+    color: $fg-color-light;
+  }
+}
+
+.card__body {
+  font-size: 1.4rem;
+  padding: 1.3rem 2rem 0;
+
+  p {
+    line-height: 2rem;
+  }
+}
+
+.card__image {
+  border-radius: 4px 4px 0 0;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.card__title {
+  margin-bottom: 0;
+}

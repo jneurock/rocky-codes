@@ -1,12 +1,13 @@
 import React from 'react';
 import ThoughtPreview from './preview';
+import { Link } from 'gatsby';
 
 export default function LatestThoughts({ thoughts }) {
   return (
     <section>
-      <header>
+      <header class="margin-btm-2x">
         <h5>
-          Latest <span className="color-secondary">Thoughts</span>
+          Latest <span class="color-secondary">Thoughts</span>
         </h5>
         <hr />
       </header>
@@ -17,6 +18,16 @@ export default function LatestThoughts({ thoughts }) {
           );
         })
       }
+      <hr />
+      <section class="latest-thoughts__read-more">
+        <Link
+          className="thought-link"
+          title="Read More Thoughts"
+          to="/thoughts"
+        >
+          Read More Thoughts &hellip;
+        </Link>
+      </section>
     </section>
   );
 }

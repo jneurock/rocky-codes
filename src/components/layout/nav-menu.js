@@ -3,11 +3,12 @@ import React from 'react';
 
 const ACTIVE_CLASS = 'active';
 
-const NavLink = ({ children, partiallyActive = true, to }) => (
+const NavLink = ({ children, partiallyActive = true, title, to }) => (
   <Link
     activeClassName={ACTIVE_CLASS}
     className="site-nav__link"
     partiallyActive={partiallyActive}
+    title={title}
     to={to}
   >
     {children}
@@ -17,28 +18,29 @@ const NavLink = ({ children, partiallyActive = true, to }) => (
 export default function NavMenu() {
   return (
     <nav class="site-nav">
-      <ul className="flex flex--wrap">
+      <ul class="flex flex--wrap">
         <li>
-          <NavLink partiallyActive={false} to="/">
+          <NavLink partiallyActive={false} title="rocky.codes | Home" to="/">
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/thoughts">
+          <NavLink title="rocky.codes | Thoughts" to="/thoughts">
             Thoughts
           </NavLink>
         </li>
         <li>
-          <NavLink to="/approach">
+          <NavLink title="rocky.codes | My Approach" to="/approach">
             My Approach
           </NavLink>
         </li>
         <li>
           <a
-            className="site-nav__link"
+            class="site-nav__link"
             href="https://resume.rocky.codes"
             rel="noreferrer"
             target="_blank"
+            title="Take a look at my resume"
           >
             Resume
           </a>

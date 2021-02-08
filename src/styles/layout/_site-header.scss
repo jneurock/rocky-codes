@@ -10,8 +10,14 @@
 }
 
 .site-header__link {
+  @include link-reset($color: $color);
+  
   border-bottom: none;
   text-decoration: none;
+
+  &:hover {
+    color: $color;
+  }
 }
 
 .site-header__name {

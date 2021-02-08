@@ -11,6 +11,7 @@ $html-color-mode-laser: "html[data-color-mode='laser']";
 
 $blue: #7ca5c3;
 $dark: #212121;
+$green: #577388;
 $light: #fff;
 $light-gray: #f1f1f1;
 $light-shade-1: #c1c1c1;
@@ -23,8 +24,13 @@ $bg-color-dark: $dark;
 $bg-color-light: $light-gray;
 $bg-color-secondary-light: $dark;
 
+$card-bg-color: $light;
+
 $color: $purple;
 $color-secondary: $blue;
+$color-tertiary: $green;
+
+$divider-color: $light-shade-1;
 
 $fg-color-dark: $light;
 $fg-color-light: $dark;

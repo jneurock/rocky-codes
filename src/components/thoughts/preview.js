@@ -1,10 +1,10 @@
 import Header from './header';
-import { Link } from 'gatsby';
 import React from 'react';
+import { Link } from 'gatsby';
 
 export default function ThoughtPreview({ content }) {
   return (
-    <article className="thought-preview" key={content.id}>
+    <article class="thought-preview" key={content.id}>
       <Header content={content} />
       <section>
         <p>
@@ -12,6 +12,7 @@ export default function ThoughtPreview({ content }) {
         </p>
         <Link
           className="thought-link"
+          title={`Read ${content.frontmatter.title}`}
           to={content.frontmatter.path}
         >
           Read More

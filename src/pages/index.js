@@ -1,10 +1,11 @@
 import Intro from '../components/intro';
 import LatestThoughts from '../components/thoughts/latest';
 import Layout from '../components/layout';
-import Projects from '../components/projects';
+import FeaturedProjects from '../components/featured-projects';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
+import projects from '../fixtures/projects';
 
 export default function Index({ data }) {
   const { edges: thoughts } = data.allMarkdownRemark;
@@ -14,7 +15,7 @@ export default function Index({ data }) {
       <Helmet title="rocky.codes" />
       <Intro />
       <LatestThoughts thoughts={thoughts} />
-      <Projects />
+      <FeaturedProjects projects={projects} />
     </Layout>
   );
 }

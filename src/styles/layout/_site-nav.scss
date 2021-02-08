@@ -1,11 +1,8 @@
 .site-nav {
   margin-bottom: 2rem;
 
-  // TODO: Could be a utility class? Better to be a mixin, if needed.
   ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    @include list-style-none;
   }
 }
 

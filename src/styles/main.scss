@@ -1,7 +1,3 @@
-// TODO: Go mobile-first or figure out fluidity
-// TODO: Support dark mode
-// TODO: Add laser mode
-
 @import "./base/variables";
 @import "./base/mixins";
 @import "./base/fonts";
@@ -12,7 +8,12 @@
 @import "./layout/site-footer";
 @import "./layout/site-header";
 @import "./utility/flex";
+@import "./utility/spacing";
 @import "./utility/typography";
+@import "./components/card";
 @import "./components/intro";
 @import "./components/page";
-@import "./components/thoughts";
+@import "./components/projects";
+@import "./components/social-menu";
+@import "./components/thoughts/latest";
+@import "./components/thoughts/thought";

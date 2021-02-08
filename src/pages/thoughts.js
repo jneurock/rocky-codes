@@ -3,12 +3,6 @@ import React from 'react';
 import ThoughtPreview from '../components/thoughts/preview';
 import { graphql } from 'gatsby';
 
-/**
-  TODO:
-    - Breadcrumbs?
-    - Tags
-    - Pagination
- */
 export default function Thoughts({ data }) {
   const { edges: thoughts } = data.allMarkdownRemark;
 

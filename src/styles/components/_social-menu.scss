@@ -1,0 +1,8 @@
+.social-menu {
+  @include list-style-none;
+}
+
+.social-menu__item {
+  font-size: 2rem;
+  margin: 0 2rem 1.3rem 0;
+}

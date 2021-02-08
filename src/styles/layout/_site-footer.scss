@@ -1,12 +1,12 @@
 .site-footer {
   background-color: $bg-color-secondary-light;
-  // TODO: Make this a color var
-  border-top: 1px solid #e1e1e1;
   color: $fg-color-secondary-light;
   padding: 3rem 0;
 
   a {
     @include link-reset($color: $fg-color-secondary-light);
+
+    border-bottom: none;
 
     &:focus,
     &:hover {
@@ -14,26 +14,35 @@
     }
   }
 
-  &__description {
-    order: 1;
-
-    @include media-lg() {
-      order: 0;
-    }
-  }
-
-  &__social-menu {
-    list-style: none;
-    margin: 0;
+  .social-menu {
     order: 0;
-    padding: 0;
 
     @include media-lg() {
       order: 1;
     }
   }
+}
 
-  &__social-menu-item {
-    margin: 0 0 1.3rem;
+.site-footer__description {
+  order: 1;
+
+  @include media-lg() {
+    order: 0;
   }
+}
+
+.site-footer__social-menu {
+  list-style: none;
+  margin: 0;
+  order: 0;
+  padding: 0;
+
+  @include media-lg() {
+    order: 1;
+  }
+}
+
+.site-footer__social-menu-item {
+  font-size: 2rem;
+  margin: 0 2rem 1.3rem 0;
 }
