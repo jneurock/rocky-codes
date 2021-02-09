@@ -7,11 +7,11 @@ function getValuePosition(values, value) {
   return position === -1 ? 0 : position;
 }
 
-export default function Toggle({ label, onChange, value, valueIcons, values }) {
+export default function Toggle({ onChange, value, valueIcons, values }) {
   const currentPosition = getValuePosition(values, value);
   const [position, setPosition] = React.useState(currentPosition);
 
-  function advancePosition(_, i) {
+  function advancePosition(_e, i) {
     const nextPosition = i != null
       ? i
       : position < values.length - 1

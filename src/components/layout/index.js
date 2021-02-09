@@ -1,4 +1,3 @@
-import FontLoader from '../font-loader';
 import Footer from './footer';
 import Head from '../head';
 import Header from './header';
@@ -10,7 +9,6 @@ export default function Layout({ children, meta }) {
   return (
     <div className="container flex flex--direction-column">
       <Head meta={meta} />
-      <FontLoader />
       <div className="container__content-wrapper flex--grow-1">
         <Header className="content" />
         <main className="content">

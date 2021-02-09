@@ -1,3 +1,4 @@
+import FontLoader from './font-loader';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
@@ -19,19 +20,22 @@ export default function Head({ meta }) {
   ).replace(/\n/g, '');
 
   return (
-    <Helmet>
-      <title>
-        {pageTitle}
-      </title>
-      <meta property="description" content={pageDescription} />
-      <meta property="og:image" content={imageSrc} />
-      <meta property="og:title" content={title || siteMetadata.title} />
-      <meta property="og:type" content={type || 'website'} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta
-        name="twitter:creator"
-        content={twitterCreator || siteMetadata.twitterCreator}
-      />
-    </Helmet>
+    <>
+      <Helmet>
+        <title>
+          {pageTitle}
+        </title>
+        <meta property="description" content={pageDescription} />
+        <meta property="og:image" content={imageSrc} />
+        <meta property="og:title" content={title || siteMetadata.title} />
+        <meta property="og:type" content={type || 'website'} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:creator"
+          content={twitterCreator || siteMetadata.twitterCreator}
+        />
+      </Helmet>
+      <FontLoader />
+    </>
   );
 }
