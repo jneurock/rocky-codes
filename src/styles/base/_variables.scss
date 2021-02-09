@@ -5,12 +5,14 @@ $breakpoint-lg: 1000px;
 // Color mode
 
 $html-color-mode-dark: "html[data-color-mode='dark']";
-$html-color-mode-laser: "html[data-color-mode='laser']";
 
 // Raw colors
 
 $blue: #7ca5c3;
+$even-less-dark: #424242;
+$less-dark: #333;
 $dark: #212121;
+$darker: #111;
 $green: #577388;
 $light: #fff;
 $light-gray: #f1f1f1;
@@ -22,6 +24,8 @@ $purple: #8e7cc3;
 
 $bg-color-dark: $dark;
 $bg-color-light: $light-gray;
+$bg-color-secondary-dark: $darker;
+$bg-color-tertiary-dark: $less-dark;
 $bg-color-secondary-light: $dark;
 
 $card-bg-color: $light;
@@ -32,7 +36,7 @@ $color-tertiary: $green;
 
 $divider-color: $light-shade-1;
 
-$fg-color-dark: $light;
+$fg-color-dark: $light-gray;
 $fg-color-light: $dark;
 $fg-color-secondary-light: $light-shade-2;
 

@@ -1,0 +1,17 @@
+.site-header {
+  margin-bottom: 2rem;
+  padding-top: 7.2rem;
+
+  .subtitle {
+    margin-bottom: 0; // TODO: Utility class?
+  }
+
+  .toggle {
+    margin: 3rem auto 0;
+
+    @include media-lg() {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}

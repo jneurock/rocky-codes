@@ -4,6 +4,14 @@
   border-radius: 4px;
   width: 28rem;
 
+  #{$html-color-mode-dark} & {
+    background-color: $bg-color-tertiary-dark;
+
+    a {
+      color: $fg-color-dark;
+    }
+  }
+
   a {
     border: none;
     color: $fg-color-light;

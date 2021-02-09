@@ -1,0 +1,14 @@
+.site-title__link {
+  @include link-reset($color: $color);
+  
+  border-bottom: none;
+  text-decoration: none;
+
+  &:hover {
+    color: $color;
+  }
+}
+
+.site-title__name {
+  margin: 0 0 1.3rem;
+}

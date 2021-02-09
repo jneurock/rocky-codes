@@ -3,6 +3,10 @@
   color: $fg-color-secondary-light;
   padding: 3rem 0;
 
+  #{$html-color-mode-dark} & {
+    background-color: $bg-color-secondary-dark;
+  }
+
   a {
     @include link-reset($color: $fg-color-secondary-light);
 

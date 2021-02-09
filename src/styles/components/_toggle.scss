@@ -1,0 +1,45 @@
+$switch-increment: 3rem;
+
+.toggle {
+  position: relative;
+
+  .toggle-icons {
+    color: $color;
+    position: relative;
+    top: -1rem;
+  }
+}
+
+.toggle__bar {
+  background-color: $color;
+  height: 0.6rem;
+  width: 8rem;
+}
+
+.toggle__control {
+  margin: 0 0.5rem;
+}
+
+.toggle__switch {
+  border: 1px solid $color;
+  border-radius: 50%;
+  box-shadow: 0px 1px 2px rgb(0 0 0 / 15%);
+  cursor: pointer;
+  height: 2rem;
+  position: relative;
+  top: -1.3rem;
+  width: 2rem;
+
+  &:focus {
+    border-color: $color-secondary;
+    outline: none;
+  }
+
+  &[data-toggle-position="1"] {
+    left: $switch-increment;
+  }
+
+  &[data-toggle-position="2"] {
+    left: $switch-increment * 2;
+  }
+}

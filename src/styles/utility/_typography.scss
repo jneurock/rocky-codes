@@ -1,5 +1,9 @@
 .color-fg {
   color: $fg-color-light;
+
+  #{$html-color-mode-dark} & {
+    color: $fg-color-dark;
+  }
 }
 
 .color-primary {
@@ -24,6 +28,15 @@
   @include media-sm() {
     display: none;
   }
+}
+
+.screen-reader-only {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
 }
 
 .upcase {

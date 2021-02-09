@@ -1,15 +1,14 @@
 # TODO:
 
 Here's a high-level TODO list:
-  * Color modes (system, light, dark, laser)
-    * Store with local storage
-  * Write about approach to things
   * Add tests
     * Is there anything to test?
-      * Maybe just some component rendering tests?
+      * Toggles
+      * Storage
   * Check Lighthouse score
   * Check accessibility
-  * Write some more posts
+  * Write about approach to things
+  * Finish writing first 3 posts
   * Update README
   * Share the new site after good smoke testing
   * Add tags to posts and allow Thoughts page to be filtered by them

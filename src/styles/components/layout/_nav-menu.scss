@@ -6,6 +6,16 @@
   }
 }
 
+.site-nav__item {
+  margin: 2rem 1rem 0;
+
+  @include media-lg () {
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
+
 .site-nav__link {
   @include link-reset($color: $fg-color-dark);
 
@@ -13,11 +23,10 @@
   border-bottom: none;
   border-radius: 4px;
   font-size: 1.5rem;
-  margin: 2rem 2rem 0 0;
   padding: 0.5rem 1rem;
   text-align: center;
   width: 9rem;
-  
+
   @include media-lg() {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -28,9 +37,27 @@
   &.active:hover {
     background-color: $bg-color-secondary-light;
     color: $fg-color-dark;
+
+    #{$html-color-mode-dark} & {
+      background-color: $bg-color-tertiary-dark;
+    }
   }
 
   &:hover {
     background-color: lighten($color, 7%);
+
+    #{$html-color-mode-dark} & {
+      background-color: darken($color, 7%);
+    }
+  }
+}
+
+.site-nav__menu {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  @include media-lg() {
+    justify-content: flex-start;
   }
 }

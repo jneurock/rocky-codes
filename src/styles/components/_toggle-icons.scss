@@ -1,0 +1,11 @@
+.toggle-icon {
+  cursor: pointer;
+}
+
+.toggle-icon--active {
+  color: $fg-color-light;
+
+  #{$html-color-mode-dark} & {
+    color: $fg-color-dark;
+  }
+}

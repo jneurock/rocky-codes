@@ -18,23 +18,23 @@ const NavLink = ({ children, partiallyActive = true, title, to }) => (
 export default function NavMenu() {
   return (
     <nav className="site-nav">
-      <ul className="flex flex--wrap">
-        <li>
+      <ul className="site-nav__menu">
+        <li className="site-nav__item">
           <NavLink partiallyActive={false} title="rocky.codes | Home" to="/">
             Home
           </NavLink>
         </li>
-        <li>
+        <li className="site-nav__item">
           <NavLink title="rocky.codes | Thoughts" to="/thoughts">
             Thoughts
           </NavLink>
         </li>
-        <li>
+        <li className="site-nav__item">
           <NavLink title="rocky.codes | My Approach" to="/approach">
             My Approach
           </NavLink>
         </li>
-        <li>
+        <li className="site-nav__item">
           <a
             className="site-nav__link"
             href="https://resume.rocky.codes"
