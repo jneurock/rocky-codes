@@ -24,6 +24,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "gatsby-plugin-catch-links": "^2.10.0",
+    "gatsby-plugin-optimize-svgs": "^1.0.5",
     "gatsby-plugin-react-helmet": "^3.10.0",
     "gatsby-plugin-sass": "^3.2.0",
     "gatsby-remark-vscode": "^3.2.0",

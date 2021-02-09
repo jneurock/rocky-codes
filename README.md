@@ -1,7 +1,6 @@
 # TODO:
 
 Here's a high-level TODO list:
-  * See if an svg minification or optimization plugin can be added for the build
   * Color modes (system, light, dark, laser)
     * Store with local storage
   * Write about approach to things
