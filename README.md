@@ -1,8 +1,6 @@
 # TODO:
 
 Here's a high-level TODO list:
-  * Change nav link dark bg color to #424242
-  * 404 page
   * DRY up Sass
   * Check Lighthouse score
   * Check accessibility
