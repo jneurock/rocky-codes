@@ -3,11 +3,10 @@
   padding-top: 7.2rem;
 
   .toggle {
-    margin: 3rem auto 0;
+    margin: 1rem auto 0;
 
     @include media-lg() {
-      margin-left: 0;
-      margin-right: 0;
+      margin: 3rem 0 0;
     }
   }
 }
