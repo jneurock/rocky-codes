@@ -9,7 +9,7 @@ const MOCK_ICONS = [
   { component: 'div', icon: 'bar', title: 'bar' },
 ];
 
-describe('component | toggle-icons', function() {
+describe('component | toggle | icons', function() {
   afterEach(function() {
     cleanup();
   });

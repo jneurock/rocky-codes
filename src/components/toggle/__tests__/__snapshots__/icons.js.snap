@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`component | toggle-icons renders with selected position 1`] = `
+exports[`component | toggle | icons renders with selected position 1`] = `
 <div
   className="toggle-icons flex flex--space-between"
 >
@@ -21,7 +21,7 @@ exports[`component | toggle-icons renders with selected position 1`] = `
 </div>
 `;
 
-exports[`component | toggle-icons sends the selected position on click 1`] = `
+exports[`component | toggle | icons sends the selected position on click 1`] = `
 <div>
   <div
     class="toggle-icons flex flex--space-between"
@@ -40,7 +40,7 @@ exports[`component | toggle-icons sends the selected position on click 1`] = `
 </div>
 `;
 
-exports[`component | toggle-icons sends the selected position on key event 1`] = `
+exports[`component | toggle | icons sends the selected position on key event 1`] = `
 <div>
   <div
     class="toggle-icons flex flex--space-between"
