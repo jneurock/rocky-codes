@@ -15,8 +15,8 @@ export default function Toggle({ onChange, value, valueIcons, values }) {
     const nextPosition = i != null
       ? i
       : position < values.length - 1
-      ? position + 1
-      : 0;
+        ? position + 1
+        : 0;
 
     setPosition(nextPosition);
 
@@ -35,7 +35,7 @@ export default function Toggle({ onChange, value, valueIcons, values }) {
     <div className="toggle" aria-hidden>
       <section className="toggle__control">
         <div className="toggle__bar" />
-        <button // eslint-disable-line jsx-a11y/control-has-associated-label
+        <button
           className="toggle__switch"
           data-toggle-position={position}
           onClick={advancePosition}

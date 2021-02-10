@@ -8,6 +8,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import storage from './storage';
 
+const DARK_MODE_QUERY = '(prefers-color-scheme: dark)';
 const STORAGE_KEY = 'color-mode';
 
 export const COLOR_MODES = ['system', 'light', 'dark'];
@@ -19,7 +20,7 @@ export const COLOR_MODE_ICONS = [
 
 function setMode(mode) {
   const html = dom.find('html');
-  const hasSystemDarkMode = browser.matchMedia('(prefers-color-scheme: dark)');
+  const hasSystemDarkMode = browser.matchMedia(DARK_MODE_QUERY).matches;
   const isDarkMode = mode === 'dark' || (mode !== 'light' && hasSystemDarkMode);
 
   if (isDarkMode) {

@@ -8,12 +8,16 @@ jest.mock('../browser');
 jest.mock('../dom');
 jest.mock('../storage');
 
+const mockMediaMatchDarkMode = matches =>
+  browser.matchMedia = jest.fn(() => ({ matches }));
+
 describe('unit | system | color-mode', function() {
   it('sets dark mode if `system` preference is dark', function() {
     const setAttribute = jest.fn();
+    
+    dom.find = jest.fn(() => ({ setAttribute }));
 
-    browser.matchMedia = jest.fn().mockImplementationOnce(() => true );
-    dom.find = jest.fn().mockImplementationOnce(() => ({ setAttribute }));
+    mockMediaMatchDarkMode(true);
 
     setColorMode('system');
 
@@ -35,8 +39,9 @@ describe('unit | system | color-mode', function() {
   it('removes dark mode if `system` preference is not dark', function() {
     const removeAttribute = jest.fn();
 
-    browser.matchMedia = jest.fn().mockImplementationOnce(() => false );
-    dom.find = jest.fn().mockImplementationOnce(() => ({ removeAttribute }));
+    dom.find = jest.fn(() => ({ removeAttribute }));
+
+    mockMediaMatchDarkMode(false);
 
     setColorMode('system');
 
@@ -47,7 +52,7 @@ describe('unit | system | color-mode', function() {
   it('removes dark mode if `light` preference', function() {
     const removeAttribute = jest.fn();
 
-    dom.find = jest.fn().mockImplementationOnce(() => ({ removeAttribute }));
+    dom.find = jest.fn(() => ({ removeAttribute }));
 
     setColorMode('light');
 
