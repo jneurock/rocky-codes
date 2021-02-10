@@ -9,9 +9,9 @@ export default function FeaturedProjects({ projects }) {
   return (
     <section>
       <header className="margin-btm-2x">
-        <h5>
+        <h2 className="h5">
           Featured <span className="color-secondary">Projects</span>
-        </h5>
+        </h2>
         <hr />
       </header>
       {

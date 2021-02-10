@@ -2,7 +2,9 @@
 
 Here's a high-level TODO list:
   * Check Lighthouse score
-  * Check accessibility
+    * Fix accessibility issues
+    * Fix SEO issues
+    * Fix performance issues
   * Write about approach to things
   * Finish writing first 3 posts
   * Update README
