@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component | toggle-icons renders with selected position 1`] = `
+<div
+  className="toggle-icons flex flex--space-between"
+>
+  <div
+    className="toggle-icon toggle-icon--active"
+    icon="foo"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    title="foo"
+  />
+  <div
+    className="toggle-icon "
+    icon="bar"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    title="bar"
+  />
+</div>
+`;
+
+exports[`component | toggle-icons sends the selected position on click 1`] = `
+<div>
+  <div
+    class="toggle-icons flex flex--space-between"
+  >
+    <div
+      class="toggle-icon "
+      icon="foo"
+      title="foo"
+    />
+    <div
+      class="toggle-icon "
+      icon="bar"
+      title="bar"
+    />
+  </div>
+</div>
+`;
+
+exports[`component | toggle-icons sends the selected position on key event 1`] = `
+<div>
+  <div
+    class="toggle-icons flex flex--space-between"
+  >
+    <div
+      class="toggle-icon "
+      icon="foo"
+      title="foo"
+    />
+    <div
+      class="toggle-icon "
+      icon="bar"
+      title="bar"
+    />
+  </div>
+</div>
+`;

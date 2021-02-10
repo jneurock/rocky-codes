@@ -1,8 +1,6 @@
 # TODO:
 
 Here's a high-level TODO list:
-  * Add tests
-    * toggle icons
   * Create hook for meta query
   * Check Lighthouse score
   * Check accessibility
