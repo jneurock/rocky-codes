@@ -7,13 +7,10 @@ import projects from '../fixtures/projects';
 import { graphql } from 'gatsby';
 
 export default function Index({ data }) {
-  const {
-    allMarkdownRemark: { edges: thoughts },
-    site: { siteMetadata }
-  } = data;
+  const { allMarkdownRemark: { edges: thoughts } } = data;
 
   return (
-    <Layout meta={{ siteMetadata }}>
+    <Layout>
       <Intro />
       <LatestThoughts thoughts={thoughts} />
       <FeaturedProjects projects={projects} />
@@ -38,15 +35,6 @@ export const pageQuery = graphql`
             title
           }
         }
-      }
-    }
-    site {
-      siteMetadata {
-        description
-        image
-        siteUrl
-        title
-        twitterCreator
       }
     }
   }
