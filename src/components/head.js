@@ -17,7 +17,7 @@ export default function Head({ meta = {} }) {
         <title>
           {pageTitle}
         </title>
-        <meta property="description" content={pageDescription} />
+        <meta name="description" content={pageDescription} />
         <meta property="og:image" content={imageSrc} />
         <meta property="og:title" content={title || siteMeta.title} />
         <meta property="og:type" content={type || 'website'} />
