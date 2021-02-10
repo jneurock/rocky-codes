@@ -2,11 +2,8 @@
 
 Here's a high-level TODO list:
   * Add tests
-    * Add snapshot tests?
-    * Is there anything to test?
-      * Toggles
-  * Add test script
-    * Should include ESLint
+    * toggle icons
+  * Create hook for meta query
   * Check Lighthouse score
   * Check accessibility
   * Write about approach to things

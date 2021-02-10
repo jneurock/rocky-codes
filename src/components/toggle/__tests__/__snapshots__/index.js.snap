@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component | toggle renders 1`] = `
+<div
+  aria-hidden={true}
+  className="toggle"
+>
+  <section
+    className="toggle__control"
+  >
+    <div
+      className="toggle__bar"
+    />
+    <button
+      className="toggle__switch"
+      data-testid="toggle-button"
+      data-toggle-position={0}
+      onClick={[Function]}
+      onKeyDown={[Function]}
+    />
+  </section>
+</div>
+`;
+
+exports[`component | toggle sends the value of first position after clicking last 1`] = `
+<div>
+  <div
+    aria-hidden="true"
+    class="toggle"
+  >
+    <section
+      class="toggle__control"
+    >
+      <div
+        class="toggle__bar"
+      />
+      <button
+        class="toggle__switch"
+        data-testid="toggle-button"
+        data-toggle-position="0"
+      />
+    </section>
+  </div>
+</div>
+`;
+
+exports[`component | toggle sends the value of next position on click 1`] = `
+<div>
+  <div
+    aria-hidden="true"
+    class="toggle"
+  >
+    <section
+      class="toggle__control"
+    >
+      <div
+        class="toggle__bar"
+      />
+      <button
+        class="toggle__switch"
+        data-testid="toggle-button"
+        data-toggle-position="1"
+      />
+    </section>
+  </div>
+</div>
+`;
+
+exports[`component | toggle sends the value of next position on enter 1`] = `
+<div>
+  <div
+    aria-hidden="true"
+    class="toggle"
+  >
+    <section
+      class="toggle__control"
+    >
+      <div
+        class="toggle__bar"
+      />
+      <button
+        class="toggle__switch"
+        data-testid="toggle-button"
+        data-toggle-position="0"
+      />
+    </section>
+  </div>
+</div>
+`;
+
+exports[`component | toggle sends the value of next position on space 1`] = `
+<div>
+  <div
+    aria-hidden="true"
+    class="toggle"
+  >
+    <section
+      class="toggle__control"
+    >
+      <div
+        class="toggle__bar"
+      />
+      <button
+        class="toggle__switch"
+        data-testid="toggle-button"
+        data-toggle-position="0"
+      />
+    </section>
+  </div>
+</div>
+`;

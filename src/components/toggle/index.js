@@ -37,6 +37,7 @@ export default function Toggle({ onChange, value, valueIcons, values }) {
         <div className="toggle__bar" />
         <button
           className="toggle__switch"
+          data-testid="toggle-button"
           data-toggle-position={position}
           onClick={advancePosition}
           onKeyDown={handleKey}
