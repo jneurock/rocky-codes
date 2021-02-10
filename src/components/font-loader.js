@@ -8,31 +8,31 @@ export default function FontLoader() {
         rel="preload"
         href="/fonts/Montserrat/Montserrat-ExtraBold.ttf"
         as="font"
-        crossorigin
+        crossOrigin
       />
       <link 
         rel="preload"
         href="/fonts/Nunito/Nunito-Regular.ttf"
         as="font"
-        crossorigin
+        crossOrigin
       />
       <link 
         rel="preload"
         href="/fonts/Nunito/Nunito-Italic.ttf"
         as="font"
-        crossorigin
+        crossOrigin
       />
       <link 
         rel="preload"
         href="/fonts/Nunito/Nunito-Bold.ttf"
         as="font"
-        crossorigin
+        crossOrigin
       />
       <link 
         rel="preload"
         href="/fonts/Nunito/Nunito-BoldItalic.ttf"
         as="font"
-        crossorigin
+        crossOrigin
       />
     </Helmet>
   );

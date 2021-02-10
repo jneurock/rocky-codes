@@ -5,6 +5,8 @@ Here's a high-level TODO list:
     * Is there anything to test?
       * Toggles
       * Storage
+  * Add test script
+    * Should include ESLint
   * Check Lighthouse score
   * Check accessibility
   * Write about approach to things
