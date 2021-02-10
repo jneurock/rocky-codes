@@ -1,4 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import browser from './browser';
+import dom from './dom';
 import {
   faDesktop as systemIcon,
   faCloudMoon as darkIcon,
@@ -16,8 +18,8 @@ export const COLOR_MODE_ICONS = [
 ];
 
 function setMode(mode) {
-  const html = document.querySelector('html');
-  const hasSystemDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+  const html = dom.find('html');
+  const hasSystemDarkMode = browser.matchMedia('(prefers-color-scheme: dark)');
   const isDarkMode = mode === 'dark' || (mode !== 'light' && hasSystemDarkMode);
 
   if (isDarkMode) {

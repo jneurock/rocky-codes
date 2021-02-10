@@ -2,9 +2,9 @@
 
 Here's a high-level TODO list:
   * Add tests
+    * Add snapshot tests?
     * Is there anything to test?
       * Toggles
-      * Storage
   * Add test script
     * Should include ESLint
   * Check Lighthouse score
