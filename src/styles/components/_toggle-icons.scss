@@ -3,9 +3,9 @@
 }
 
 .toggle-icon--active {
-  color: $fg-color-light;
+  color: $fg-color;
 
-  #{$html-color-mode-dark} & {
-    color: $fg-color-dark;
+  #{$dark-mode-selector} & {
+    color: $fg-color-dark-mode;
   }
 }

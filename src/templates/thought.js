@@ -8,7 +8,7 @@ export default function Template({ data }) {
 
   return (
     <Layout meta={{ description, siteMetadata, title, type: 'article' }}>
-      <article className="thought">
+      <article>
         <h2 className="thought-title">
           {thought.frontmatter.title}
         </h2>

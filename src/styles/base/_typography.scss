@@ -1,12 +1,16 @@
 a {
-  @include link-reset($color: darken($color, 16%), $text-decoration: none);
+  @include link-reset($color: $link-color, $hover-color: $link-color-hover);
 
-  border-bottom: 4px solid $color;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
   display: inline-block;
+  text-decoration: none;
 
-  &:hover {
-    border-bottom-color: darken($color, 32%);
-    color: darken($color, 32%);
+  #{$dark-mode-selector} & {
+    @include link-reset(
+      $color: $link-color-dark-mode,
+      $hover-color: $link-color-hover-dark-mode
+    );
   }
 }
 
@@ -68,7 +72,7 @@ hr {
 
 p {
   line-height: 2.5rem;
-  margin: 0 0 1.3rem;
+  margin: 0 0 $paragraph-bottom-margin;
 
   @include media-lg() {
     line-height: 3rem;
@@ -80,7 +84,7 @@ p {
 }
 
 .subheading {
-  margin-bottom: 1.3rem;
+  margin-bottom: $paragraph-bottom-margin;
 }
 
 .subtitle {

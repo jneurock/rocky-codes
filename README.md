@@ -1,7 +1,6 @@
 # TODO:
 
 Here's a high-level TODO list:
-  * DRY up Sass
   * Check Lighthouse score
   * Check accessibility
   * Write about approach to things

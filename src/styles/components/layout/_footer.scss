@@ -1,20 +1,25 @@
 .site-footer {
-  background-color: $bg-color-secondary-light;
-  color: $fg-color-secondary-light;
+  background-color: $bg-color-secondary;
+  color: $fg-color-secondary;
   padding: 3rem 0;
 
-  #{$html-color-mode-dark} & {
-    background-color: $bg-color-secondary-dark;
+  #{$dark-mode-selector} & {
+    background-color: $bg-color-secondary-dark-mode;
   }
 
   a {
-    @include link-reset($color: $fg-color-secondary-light);
+    @include link-reset(
+      $color: $fg-color-secondary,
+      $hover-color: darken($fg-color-secondary, 20%)
+    );
 
     border-bottom: none;
 
-    &:focus,
-    &:hover {
-      color: darken($fg-color-secondary-light, 20%)
+    #{$dark-mode-selector} & {
+      @include link-reset(
+        $color: $fg-color-secondary,
+        $hover-color: darken($fg-color-secondary, 20%)
+      );
     }
   }
 
@@ -36,17 +41,15 @@
 }
 
 .site-footer__social-menu {
-  list-style: none;
-  margin: 0;
-  order: 0;
-  padding: 0;
-
+  @include list-style-reset();
   @include media-lg() {
     order: 1;
   }
+
+  order: 0;
 }
 
 .site-footer__social-menu-item {
   font-size: 2rem;
-  margin: 0 2rem 1.3rem 0;
+  margin: 0 2rem $paragraph-bottom-margin 0;
 }

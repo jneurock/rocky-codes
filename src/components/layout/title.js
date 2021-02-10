@@ -13,7 +13,7 @@ export default function Title() {
           rocky<span className="color-fg">.codes</span>
         </h1>
       </Link>
-      <p className="subtitle">
+      <p className="subtitle margin-btm-0">
         Trying to share thoughts that offer something new.
       </p>
     </>

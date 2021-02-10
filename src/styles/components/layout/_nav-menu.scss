@@ -1,9 +1,5 @@
 .site-nav {
   margin-bottom: 2rem;
-
-  ul {
-    @include list-style-none;
-  }
 }
 
 .site-nav__item {
@@ -17,11 +13,11 @@
 }
 
 .site-nav__link {
-  @include link-reset($color: $fg-color-dark);
+  @include link-reset($color: $nav-item-color, $hover-color: $nav-item-color);
 
-  background-color: $color;
+  background-color: $nav-item-bg-color;
   border-bottom: none;
-  border-radius: 4px;
+  border-radius: $border-radius;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
   text-align: center;
@@ -33,21 +29,38 @@
     width: auto;
   }
 
-  &.active,
-  &.active:hover {
-    background-color: $bg-color-secondary-light;
-    color: $fg-color-dark;
+  &:hover {
+    background-color: $nav-item-bg-color-hover;
+  }
 
-    #{$html-color-mode-dark} & {
-      background-color: $bg-color-tertiary-dark;
+  #{$dark-mode-selector} & {
+    @include link-reset(
+      $color: $nav-item-color,
+      $hover-color: $nav-item-color
+    );
+
+    &:hover {
+      background-color: $nav-item-bg-color-hover-dark-mode;
     }
   }
 
-  &:hover {
-    background-color: lighten($color, 7%);
+  &--active,
+  &--active:hover {
+    @include link-reset(
+      $color: $nav-item-color-active,
+      $hover-color: $nav-item-color-active
+    );
 
-    #{$html-color-mode-dark} & {
-      background-color: darken($color, 7%);
+    background-color: $nav-item-bg-color-active;
+    color: $nav-item-color-active;
+
+    #{$dark-mode-selector} & {
+      @include link-reset(
+        $color: $nav-item-color-active,
+        $hover-color: $nav-item-color-active
+      );
+
+      background-color: $nav-item-bg-color-active-dark-mode;
     }
   }
 }
@@ -57,6 +70,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 
+  @include list-style-reset();
   @include media-lg() {
     justify-content: flex-start;
   }

@@ -1,20 +1,20 @@
 .card {
   background-color: $card-bg-color;
   border: 1px solid $divider-color;
-  border-radius: 4px;
+  border-radius: $border-radius;
   width: 28rem;
-
-  #{$html-color-mode-dark} & {
-    background-color: $bg-color-tertiary-dark;
-
-    a {
-      color: $fg-color-dark;
-    }
-  }
 
   a {
     border: none;
-    color: $fg-color-light;
+    color: $fg-color;
+  }
+
+  #{$dark-mode-selector} & {
+    background-color: $card-bg-color-dark-mode;
+
+    a {
+      color: $card-color-dark-mode;
+    }
   }
 }
 
@@ -28,11 +28,7 @@
 }
 
 .card__image {
-  border-radius: 4px 4px 0 0;
+  border-radius: $border-radius $border-radius 0 0;
   display: inline-block;
   max-width: 100%;
-}
-
-.card__title {
-  margin-bottom: 0;
 }

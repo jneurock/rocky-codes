@@ -1,43 +1,76 @@
+// Borders
+
+$border-radius: 4px;
+
 // Breakpoints
 
 $breakpoint-lg: 1000px;
 
 // Color mode
 
-$html-color-mode-dark: "html[data-color-mode='dark']";
+$dark-mode-selector: "html[data-color-mode='dark']";
 
 // Raw colors
 
 $blue: #7ca5c3;
-$less-dark: #424242;
 $dark: #212121;
-$darker: #111;
-$green: #577388;
+$dark-shade: #111;
+$dark-tint: #424242;
 $light: #fff;
-$light-gray: #f1f1f1;
 $light-shade-1: #c1c1c1;
 $light-shade-2: #d1d1d1;
+$light-tint: #f1f1f1;
 $purple: #8e7cc3;
 
 // Colors - https://colors.muz.li/palette/8e7cc3/5e5e88/9a7cc3/7ca5c3/577388
 
-$bg-color-dark: $dark;
-$bg-color-light: $light-gray;
-$bg-color-secondary-dark: $darker;
-$bg-color-tertiary-dark: $less-dark;
-$bg-color-secondary-light: $dark;
+$bg-color: $light-tint;
+$bg-color-dark-mode: $dark;
+$bg-color-secondary: $dark;
+$bg-color-tertiary: $light;
+$bg-color-secondary-dark-mode: $dark-shade;
+$bg-color-tertiary-dark-mode: $dark-tint;
 
-$card-bg-color: $light;
-
-$color: $purple;
+$color-primary: $purple;
 $color-secondary: $blue;
-$color-tertiary: $green;
 
 $divider-color: $light-shade-1;
 
-$fg-color-dark: $light-gray;
-$fg-color-light: $dark;
-$fg-color-secondary-light: $light-shade-2;
+$fg-color-dark-mode: $light-tint;
+$fg-color: $dark;
+$fg-color-dim: lighten($fg-color, 39%);
+$fg-color-secondary: $light-shade-2;
+
+// Cards
+
+$card-color-dark-mode: $fg-color-dark-mode;
+$card-bg-color: $light;
+$card-bg-color-dark-mode: $dark-tint;
+
+// Links
+
+$link-color: darken($color-primary, 15%);
+$link-color-dark-mode: $color-primary;
+$link-color-hover: darken($color-primary, 30%);
+$link-color-hover-dark-mode: lighten($link-color-dark-mode, 7%);
+
+$link-color-secondary: darken($color-secondary, 15%);
+$link-color-secondary-dark-mode: $color-secondary;
+$link-color-secondary-hover: darken($color-secondary, 30%);
+$link-color-secondary-hover-dark-mode: $link-color-secondary;
+
+$nav-item-bg-color: $color-primary;
+$nav-item-bg-color-active: $bg-color-secondary;
+$nav-item-bg-color-active-dark-mode: $bg-color-tertiary-dark-mode;
+$nav-item-bg-color-hover: lighten($nav-item-bg-color, 7%);
+$nav-item-bg-color-hover-dark-mode: darken($nav-item-bg-color, 7%);
+$nav-item-color: $light;
+$nav-item-color-active: $light-tint;
+
+// Spacing
+
+$paragraph-bottom-margin: 1.3rem;
+$section-bottom-margin: 7.2rem;
 
 // Sizing
 

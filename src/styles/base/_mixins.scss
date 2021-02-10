@@ -14,22 +14,26 @@
 
 // Links
 
-@mixin link-reset($color, $text-decoration: null) {
+@mixin link-reset($color, $hover-color) {
   &:active,
-  &:focus,
   &:link,
   &:visited  {
+    border-bottom-color: $color;
     color: $color;
+  }
 
-    @if $text-decoration {
-      text-decoration: $text-decoration;
+  @if $hover-color {
+    &:focus,
+    &:hover {
+      border-bottom-color: $hover-color;
+      color: $hover-color;
     }
   }
 }
 
 // Typography
 
-@mixin list-style-none {
+@mixin list-style-reset {
   list-style: none;
   margin: 0;
   padding: 0;

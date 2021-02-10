@@ -1,52 +1,44 @@
-.thought {
-  #{$html-color-mode-dark} & a {
-    @include link-reset($color: lighten($color, 16%));
-
-    &:hover {
-      color: $color;
-    }
-  }
-}
-
 .thought-date {
-  color: lighten($fg-color-light, 39%);
+  color: $fg-color-dim;
   margin-bottom: 1rem;
 }
 
 .thought-link {
-  @include link-reset($color: darken($color-secondary, 16%));
+  @include link-reset(
+    $color: $link-color-secondary,
+    $hover-color: $link-color-secondary-hover
+  );
 
-  border-bottom-color: $color-secondary;
+  border-bottom-color: $link-color-secondary;
 
-  #{$html-color-mode-dark} & {
-    @include link-reset($color: $color-secondary);
-
-    &:hover {
-      color: darken($color-secondary, 16%);
-    }
+  &:focus,
+  &:hover {
+    border-bottom-color: $link-color-secondary-hover;
   }
 
-  &:hover {
-    border-bottom-color: darken($color-secondary, 16%);
-    color: darken($color-secondary, 16%);
+  #{$dark-mode-selector} & {
+    @include link-reset(
+      $color: $link-color-secondary-dark-mode,
+      $hover-color: $link-color-secondary-hover-dark-mode
+    );
+
+    &:focus,
+    &:hover {
+      border-bottom-color: $link-color-secondary-hover-dark-mode;
+    }
   }
 }
 
 .thought-link--heading {
-  @include link-reset($color: $fg-color-light);
+  @include link-reset($color: $fg-color, $hover-color: $color-secondary);
 
   border-bottom: none;
 
-  #{$html-color-mode-dark} & {
-    @include link-reset($color: $color-secondary);
-
-    &:hover {
-      color: darken($color-secondary, 16%);
-    }
-  }
-
-  &:hover {
-    color: $color-secondary;
+  #{$dark-mode-selector} & {
+    @include link-reset(
+      $color: $link-color-secondary-dark-mode,
+      $hover-color: $link-color-secondary-hover-dark-mode
+    );
   }
 }
 

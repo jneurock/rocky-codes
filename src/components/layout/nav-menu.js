@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-const ACTIVE_CLASS = 'active';
+const ACTIVE_CLASS = 'site-nav__link--active';
 
 const NavLink = ({ children, partiallyActive = true, title, to }) => (
   <Link
