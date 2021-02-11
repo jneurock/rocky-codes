@@ -1,15 +1,15 @@
 import React from 'react';
+import ThoughtMeta from './meta';
 import { Link } from 'gatsby';
 
 export default function ThoughtPreview({ content }) {
   return (
     <article className="thought-preview" key={content.id}>
       <header>
-        <div className="thought-date">
-          <small>
-            {content.frontmatter.date}
-          </small>
-        </div>
+        <ThoughtMeta
+          date={content.frontmatter.date}
+          readTime={content.fields.readingTime.text}
+        />
         <Link
           className="thought-preview__link"
           title={`Read ${content.frontmatter.title}`}

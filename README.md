@@ -6,6 +6,12 @@ Here's a high-level TODO list:
     * First 3 posts
   * Update README
   * Share the new site after good smoke testing
+    * Smoke test:
+      * Chrome
+      * Safari
+      * Firefox
+      * Chrome for iOS
+      * Safari for iOS
   * Add tags to posts and allow Thoughts page to be filtered by them
   * Add pagination to Thoughts page
   * Add breadcrumbs to Thoughts

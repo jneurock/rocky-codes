@@ -11,6 +11,7 @@ module.exports = {
     'gatsby-plugin-catch-links',
     'gatsby-plugin-optimize-svgs',
     'gatsby-plugin-react-helmet',
+    'gatsby-remark-reading-time',
     'gatsby-plugin-sass',
     'gatsby-transformer-remark',
     {

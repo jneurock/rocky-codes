@@ -1,21 +1,22 @@
 import Layout from '../components/layout';
 import React from 'react';
+import ThoughtMeta from '../components/thoughts/meta';
 import { graphql } from 'gatsby';
 
 export default function Template({ data }) {
-  const { markdownRemark: thought, site: { siteMetadata } } = data;
-  const { excerpt: description, frontmatter: { title } } = thought;
+  const { markdownRemark: thought } = data;
+  const { excerpt: description, fields, frontmatter } = thought;
+  const { title } = frontmatter;
 
   return (
-    <Layout meta={{ description, siteMetadata, title, type: 'article' }}>
+    <Layout meta={{ description, title, type: 'article' }}>
       <article>
-        <div className="thought-date">
-          <small>
-            {thought.frontmatter.date}
-          </small>
-        </div>
+        <ThoughtMeta
+          date={frontmatter.date}
+          readTime={fields.readingTime.text}
+        />
         <h2 className="thought-title">
-          {thought.frontmatter.title}
+          {title}
         </h2>
         <section dangerouslySetInnerHTML={{ __html: thought.html }} />
       </article>
@@ -27,21 +28,17 @@ export const pageQuery = graphql`
   query ThoughtByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       excerpt(pruneLength: 250)
+      fields {
+        readingTime {
+          text
+        }
+      }
       frontmatter {
         date(formatString: "YYYY-MM-DD")
         path
         title
       }
       html
-    }
-    site {
-      siteMetadata {
-        description
-        image
-        siteUrl
-        title
-        twitterCreator
-      }
     }
   }
 `;

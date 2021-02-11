@@ -2,7 +2,7 @@ a {
   @include link-reset($color: $link-color, $hover-color: $link-color-hover);
 
   border-bottom-style: solid;
-  border-bottom-width: 4px;
+  border-bottom-width: 3px;
   display: inline-block;
   text-decoration: none;
 
@@ -76,21 +76,21 @@ hr {
   border-top: 1px solid $divider-color;
 }
 
-p {
-  line-height: 2.5rem;
-  margin: 0 0 $paragraph-bottom-margin;
+li {
+  margin: 0 0 $base-bottom-margin;
+}
 
-  @include media-lg() {
-    line-height: 3rem;
-  }
+p {
+  line-height: 2.7rem;
+  margin: 0 0 2.7rem;
 
   a {
-    line-height: 2rem;
+    line-height: 1.7rem;
   }
 }
 
 .subheading {
-  margin-bottom: $paragraph-bottom-margin;
+  margin-bottom: $base-bottom-margin;
 }
 
 .subtitle {

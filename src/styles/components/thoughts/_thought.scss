@@ -1,8 +1,3 @@
-.thought-date {
-  color: $fg-color-dim;
-  margin-bottom: 1rem;
-}
-
 .thought-link {
   @include link-reset(
     $color: $link-color-secondary,
@@ -17,6 +12,11 @@
       $hover-color: $link-color-secondary-hover-dark-mode
     );
   }
+}
+
+.thought-meta {
+  color: $fg-color-dim;
+  margin-bottom: 1rem;
 }
 
 .thought-title {

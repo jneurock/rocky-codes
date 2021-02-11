@@ -18,7 +18,7 @@ export default function Footer() {
             &copy; 2021 - Rocky Neurock
           </p>
         </div>
-        <div>
+        <div className="site-footer__connect">
           <p className="margin-btm-0">
             Let&rsquo;s Connect
           </p>
