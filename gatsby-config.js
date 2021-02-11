@@ -34,7 +34,7 @@ module.exports = {
               theme: {
                 default: 'Light (Visual Studio)',
                 parentSelector: {
-                  'html[data-theme=dark]': 'Monokai'
+                  'html[data-color-mode=dark]': 'Monokai'
                 }
               }
             }
