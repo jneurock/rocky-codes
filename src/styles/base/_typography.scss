@@ -57,35 +57,23 @@ h3,
 
 h4,
 .h4 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: $base-bottom-margin;
-
-  @include media-lg() {
-    font-size: 2rem;
-  }
 }
 
 h5,
 .h5 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: $base-bottom-margin;
-
-  @include media-lg() {
-    font-size: 1.6rem;
-  }
 }
 
 h6,
 .h6 {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: $base-bottom-margin;
-
-  @include media-lg() {
-    font-size: 1.2rem;
-  }
 }
 
 hr {
@@ -97,8 +85,13 @@ li {
 }
 
 p {
+  font-size: 2rem;
   line-height: 2.7rem;
   margin: 0 0 2.7rem;
+
+  @include media-lg() {
+    font-size: 1.7rem;
+  }
 
   a {
     line-height: 1.7rem;

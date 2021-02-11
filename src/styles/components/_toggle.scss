@@ -21,6 +21,7 @@ $switch-increment: 3rem;
 }
 
 .toggle__switch {
+  background-color: $light;
   border: 1px solid $color-primary;
   border-radius: 50%;
   box-shadow: 0px 1px 2px rgb(0 0 0 / 15%);
