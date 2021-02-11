@@ -7,7 +7,7 @@ function getValuePosition(values, value) {
   return position === -1 ? 0 : position;
 }
 
-export default function Toggle({ onChange, value, valueIcons, values }) {
+export default function Toggle({ id, onChange, value, valueIcons, values }) {
   const currentPosition = getValuePosition(values, value);
   const [position, setPosition] = React.useState(currentPosition);
 
@@ -32,13 +32,18 @@ export default function Toggle({ onChange, value, valueIcons, values }) {
   }
 
   return (
-    <div className="toggle" aria-hidden>
+    <div className="toggle">
       <section className="toggle__control">
         <div className="toggle__bar" />
+        <label className="screen-reader-only" htmlFor={id}>
+          Color Mode:
+        </label>
         <button
+          aria-label="Toggle Color Mode"
           className="toggle__switch"
           data-testid="toggle-button"
           data-toggle-position={position}
+          id={id}
           onClick={advancePosition}
           onKeyDown={handleKey}
         />

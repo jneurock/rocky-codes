@@ -9,6 +9,11 @@ export default function Template({ data }) {
   return (
     <Layout meta={{ description, siteMetadata, title, type: 'article' }}>
       <article>
+        <div className="thought-date">
+          <small>
+            {thought.frontmatter.date}
+          </small>
+        </div>
         <h2 className="thought-title">
           {thought.frontmatter.title}
         </h2>

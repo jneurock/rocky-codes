@@ -13,7 +13,7 @@ export default function Head({ meta = {} }) {
 
   return (
     <>
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: 'en' }}>
         <title>
           {pageTitle}
         </title>

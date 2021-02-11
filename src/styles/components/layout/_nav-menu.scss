@@ -34,14 +34,7 @@
   }
 
   #{$dark-mode-selector} & {
-    @include link-reset(
-      $color: $nav-item-color,
-      $hover-color: $nav-item-color
-    );
-
-    &:hover {
-      background-color: $nav-item-bg-color-hover-dark-mode;
-    }
+    @include link-reset($color: $nav-item-color, $hover-color: $nav-item-color);
   }
 
   &--active,

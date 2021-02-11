@@ -1,12 +1,9 @@
 # TODO:
 
 Here's a high-level TODO list:
-  * Check Lighthouse score
-    * Fix accessibility issues
-    * Fix SEO issues
-    * Fix performance issues
-  * Write about approach to things
-  * Finish writing first 3 posts
+  * Finish writing for MVP
+    * My Approach page
+    * First 3 posts
   * Update README
   * Share the new site after good smoke testing
   * Add tags to posts and allow Thoughts page to be filtered by them

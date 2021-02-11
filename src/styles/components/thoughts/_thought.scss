@@ -11,42 +11,11 @@
 
   border-bottom-color: $link-color-secondary;
 
-  &:focus,
-  &:hover {
-    border-bottom-color: $link-color-secondary-hover;
-  }
-
   #{$dark-mode-selector} & {
     @include link-reset(
       $color: $link-color-secondary-dark-mode,
       $hover-color: $link-color-secondary-hover-dark-mode
     );
-
-    &:focus,
-    &:hover {
-      border-bottom-color: $link-color-secondary-hover-dark-mode;
-    }
-  }
-}
-
-.thought-link--heading {
-  @include link-reset($color: $fg-color, $hover-color: $color-secondary);
-
-  border-bottom: none;
-
-  #{$dark-mode-selector} & {
-    @include link-reset(
-      $color: $link-color-secondary-dark-mode,
-      $hover-color: $link-color-secondary-hover-dark-mode
-    );
-  }
-}
-
-.thought-preview {
-  margin-bottom: 6rem;
-
-  &:last-of-type {
-    margin-bottom: 3rem;
   }
 }
 

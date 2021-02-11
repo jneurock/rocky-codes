@@ -1,3 +1,4 @@
+import Picture from './picture';
 import React from 'react';
 
 export default function Intro() {
@@ -7,10 +8,13 @@ export default function Intro() {
         Hi.
       </h2>
       <p>
-        <img
-          className="intro__photo"
+        <Picture
           alt="Rocky Neurock"
-          src="/images/rocky.jpg"
+          height="10rem"
+          imgClass="intro__photo"
+          lgBreakpoint="1000px"
+          src="/images/rocky-1x.jpg"
+          width="10rem"
         />
         My name is Rocky. I built this site so I could share thoughts about
         software engineering and leadership, write about my own personal approach

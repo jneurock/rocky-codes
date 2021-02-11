@@ -59,11 +59,10 @@ $link-color-secondary-dark-mode: $color-secondary;
 $link-color-secondary-hover: darken($color-secondary, 30%);
 $link-color-secondary-hover-dark-mode: $link-color-secondary;
 
-$nav-item-bg-color: $color-primary;
+$nav-item-bg-color: darken($color-primary, 15%);
 $nav-item-bg-color-active: $bg-color-secondary;
 $nav-item-bg-color-active-dark-mode: $bg-color-tertiary-dark-mode;
-$nav-item-bg-color-hover: lighten($nav-item-bg-color, 7%);
-$nav-item-bg-color-hover-dark-mode: darken($nav-item-bg-color, 7%);
+$nav-item-bg-color-hover: $color-primary;
 $nav-item-color: $light;
 $nav-item-color-active: $light-tint;
 
