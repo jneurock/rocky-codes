@@ -6,6 +6,12 @@ export default function FontLoader() {
     <Helmet>
       <link 
         rel="preload"
+        href="/fonts/Montserrat/Montserrat-Bold.ttf"
+        as="font"
+        crossOrigin
+      />
+      <link 
+        rel="preload"
         href="/fonts/Montserrat/Montserrat-ExtraBold.ttf"
         as="font"
         crossOrigin

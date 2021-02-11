@@ -15,7 +15,7 @@ export default function ThoughtPreview({ content }) {
           title={`Read ${content.frontmatter.title}`}
           to={content.frontmatter.path}
         >
-          <h3>
+          <h3 className="margin-btm-0">
             {content.frontmatter.title}
           </h3>
         </Link>
