@@ -31,3 +31,8 @@ for this site and I’m completely happy with the progress. Going forward, I’l
 always remember try to remember 2 things:
 1. Inspiration is a great motivator.
 2. Resistance is helpful. It tells us to take a break and gain understanding.
+
+The resistance I felt was the idea of trying to force myself to write a bunch of
+content first. My natural tendency was to focus on lots of little design touches
+and I had to stop and really think about what was happening to have a
+realization.

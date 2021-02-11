@@ -3,7 +3,7 @@
 Here's a high-level TODO list:
   * Finish writing for MVP
     * My Approach page
-    * First 3 posts
+    * Last of the initial posts
   * Update README
   * Share the new site after good smoke testing
     * Smoke test:
