@@ -1,6 +1,6 @@
+import ContentMeta from '../components/content-meta';
 import Layout from '../components/layout';
 import React from 'react';
-import ThoughtMeta from '../components/thoughts/meta';
 import { graphql } from 'gatsby';
 
 export default function Template({ data }) {
@@ -11,7 +11,7 @@ export default function Template({ data }) {
   return (
     <Layout meta={{ description, title, type: 'article' }}>
       <article>
-        <ThoughtMeta
+        <ContentMeta
           date={frontmatter.date}
           readTime={fields.readingTime.text}
         />

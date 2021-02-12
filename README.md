@@ -2,7 +2,6 @@
 
 Here's a high-level TODO list:
   * Finish writing for MVP
-    * My Approach page
     * Last of the initial posts
   * Update README
   * Share the new site after good smoke testing

@@ -1,12 +1,12 @@
 import React from 'react';
-import ThoughtMeta from './meta';
+import ContentMeta from '../content-meta';
 import { Link } from 'gatsby';
 
 export default function ThoughtPreview({ content }) {
   return (
     <article className="thought-preview" key={content.id}>
       <header>
-        <ThoughtMeta
+        <ContentMeta
           date={content.frontmatter.date}
           readTime={content.fields.readingTime.text}
         />

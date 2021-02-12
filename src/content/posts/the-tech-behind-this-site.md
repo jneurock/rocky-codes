@@ -109,3 +109,9 @@ but in most cases I found it polluted my templates too much for my taste.
 That prior, similar experience and some of the complexity of incorporating
 Tailwind left me feeling like avoiding it, for now. In the end, I wanted this
 site to have a very minimalist design and some custom CSS worked just fine.
+
+---
+
+The code for this site is open source. If you’d like to dig into how things
+work, feel free to visit
+[github.com/jneurock/rocky-codes](https://github.com/jneurock/rocky-codes).

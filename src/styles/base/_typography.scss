@@ -12,6 +12,10 @@ a {
       $hover-color: $link-color-hover-dark-mode
     );
   }
+
+  &.no-underline {
+    border-bottom: none;
+  }
 }
 
 h1,
@@ -78,6 +82,7 @@ h6,
 
 hr {
   border-top: 1px solid $divider-color;
+  margin: 2.7rem 0;
 }
 
 li {
@@ -96,6 +101,11 @@ p {
   a {
     line-height: 1.7rem;
   }
+}
+
+ol,
+ul {
+  margin: 1rem 1rem 3rem;
 }
 
 pre {

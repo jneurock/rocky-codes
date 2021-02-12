@@ -9,7 +9,7 @@ export default function Title() {
         title="rocky.codes | Home"
         to="/"
       >
-        <h1 className="site-title__name">
+        <h1 id="top" className="site-title__name">
           rocky<span className="color-fg">.codes</span>
         </h1>
       </Link>

@@ -5,9 +5,9 @@ import React from 'react';
 
 import '../../styles/main.scss';
 
-export default function Layout({ children, meta }) {
+export default function Layout({ children, className, meta }) {
   return (
-    <div className="container flex flex--direction-column">
+    <div className={`container flex flex--direction-column ${className}`}>
       <Head meta={meta} />
       <div className="container__content-wrapper flex--grow-1">
         <Header className="content" />
