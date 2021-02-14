@@ -1,0 +1,13 @@
+* Share the new site after good smoke testing
+* Smoke test:
+  * Chrome
+  * Safari
+  * Firefox
+  * Chrome for iOS
+  * Safari for iOS
+  * Make sure all links are working
+* Smoke test sharing preview
+* Add tags to posts and allow Thoughts page to be filtered by them
+* Add pagination to Thoughts page
+* Add breadcrumbs to Thoughts
+* Add talks section to home page
