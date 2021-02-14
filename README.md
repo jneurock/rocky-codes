@@ -1,8 +1,6 @@
 # TODO:
 
 Here's a high-level TODO list:
-  * Finish writing for MVP
-    * Last of the initial posts
   * Update README
   * Share the new site after good smoke testing
     * Smoke test:
@@ -11,6 +9,7 @@ Here's a high-level TODO list:
       * Firefox
       * Chrome for iOS
       * Safari for iOS
+      * Make sure all links are working
   * Add tags to posts and allow Thoughts page to be filtered by them
   * Add pagination to Thoughts page
   * Add breadcrumbs to Thoughts

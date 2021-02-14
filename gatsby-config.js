@@ -28,13 +28,16 @@ module.exports = {
           {
             resolve: 'gatsby-remark-vscode',
             options: {
+              extensions: [
+                `${__dirname}/node_modules/night-owl/package.json`
+              ],
               inlineCode: {
                 marker: '•'
               },
               theme: {
-                default: 'Light (Visual Studio)',
+                default: 'Night Owl Light',
                 parentSelector: {
-                  'html[data-color-mode=dark]': 'Monokai'
+                  'html[data-color-mode=dark]': 'Night Owl'
                 }
               }
             }
@@ -43,4 +46,4 @@ module.exports = {
       }
     }
   ]
-}
+};

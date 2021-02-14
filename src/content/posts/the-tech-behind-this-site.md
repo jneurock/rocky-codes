@@ -1,5 +1,5 @@
 ---
-date: 2021-02-06
+date: 2021-02-05
 path: "/thoughts/tech-behind-this-site"
 title: "The Tech Behind This Site"
 ---

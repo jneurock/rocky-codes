@@ -33,7 +33,7 @@ export default function Picture({
   width
 }) {
   return (
-    <picture height={height} width={width}>
+    <picture>
       {
         SOURCES.map(function({ hasMaxWidth, pixelRatio, size }) {
           return (
@@ -45,7 +45,13 @@ export default function Picture({
           );
         })
       }
-      <img alt={alt} className={imgClass} src={src} />
+      <img
+        alt={alt}
+        className={imgClass}
+        height={height}
+        src={src}
+        width={width}
+      />
     </picture>
   );
 }

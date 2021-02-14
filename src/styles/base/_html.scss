@@ -22,6 +22,14 @@ body {
     color: $fg-color-dark-mode;
     background-image: url("/images/symbols-dark.svg");
   }
+
+  @include media-lg() {
+    background-position: center top;
+  }
+}
+
+img {
+  max-width: 100%;
 }
 
 main {

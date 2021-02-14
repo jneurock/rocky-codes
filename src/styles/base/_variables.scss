@@ -16,6 +16,7 @@ $blue: #7ca5c3;
 $dark: #212121;
 $dark-shade: #111;
 $dark-tint: #424242;
+$dark-tint-1: #333;
 $light: #fff;
 $light-shade-1: #c1c1c1;
 $light-shade-2: #d1d1d1;
@@ -66,6 +67,11 @@ $nav-item-bg-color-hover: $color-primary;
 $nav-item-color: $light;
 $nav-item-color-active: $light-tint;
 
+// Preformatted text
+
+$pre-border-color: $light-shade-2;
+$pre-border-color-dark-mode: $dark-tint;
+
 // Spacing
 
 $base-bottom-margin: 1.3rem;
@@ -74,3 +80,8 @@ $section-bottom-margin: 7.2rem;
 // Sizing
 
 $max-content-width: 64rem;
+
+// Tables
+
+$table-alt-bg-color: $light;
+$table-alt-bg-color-dark-mode: $dark-tint-1;
