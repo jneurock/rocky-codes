@@ -91,7 +91,7 @@ found that it did everything I wanted it to do.
 
 Since I decided against GitHub Pages, I wanted to explore some Jamstack
 deployment platforms. The 2 that came to mind first were
-[Netlify](https://netlify.com) and [Vercel](hhtps://vercel.com). Similar to how
+[Netlify](https://netlify.com) and [Vercel](https://vercel.com). Similar to how
 I ended up deciding to use Gatsby over Next.js, Netlify came first. I already
 had a Netlify account and was familiar with some of the features.
 
