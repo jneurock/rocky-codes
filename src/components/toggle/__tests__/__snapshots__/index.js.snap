@@ -12,9 +12,7 @@ exports[`component | toggle renders 1`] = `
     />
     <label
       className="screen-reader-only"
-    >
-      Color Mode:
-    </label>
+    />
     <button
       aria-label="Toggle Color Mode"
       className="toggle__switch"
@@ -24,113 +22,5 @@ exports[`component | toggle renders 1`] = `
       onKeyDown={[Function]}
     />
   </section>
-</div>
-`;
-
-exports[`component | toggle sends the value of first position after clicking last 1`] = `
-<div>
-  <div
-    class="toggle"
-  >
-    <section
-      class="toggle__control"
-    >
-      <div
-        class="toggle__bar"
-      />
-      <label
-        class="screen-reader-only"
-      >
-        Color Mode:
-      </label>
-      <button
-        aria-label="Toggle Color Mode"
-        class="toggle__switch"
-        data-testid="toggle-button"
-        data-toggle-position="0"
-      />
-    </section>
-  </div>
-</div>
-`;
-
-exports[`component | toggle sends the value of next position on click 1`] = `
-<div>
-  <div
-    class="toggle"
-  >
-    <section
-      class="toggle__control"
-    >
-      <div
-        class="toggle__bar"
-      />
-      <label
-        class="screen-reader-only"
-      >
-        Color Mode:
-      </label>
-      <button
-        aria-label="Toggle Color Mode"
-        class="toggle__switch"
-        data-testid="toggle-button"
-        data-toggle-position="1"
-      />
-    </section>
-  </div>
-</div>
-`;
-
-exports[`component | toggle sends the value of next position on enter 1`] = `
-<div>
-  <div
-    class="toggle"
-  >
-    <section
-      class="toggle__control"
-    >
-      <div
-        class="toggle__bar"
-      />
-      <label
-        class="screen-reader-only"
-      >
-        Color Mode:
-      </label>
-      <button
-        aria-label="Toggle Color Mode"
-        class="toggle__switch"
-        data-testid="toggle-button"
-        data-toggle-position="0"
-      />
-    </section>
-  </div>
-</div>
-`;
-
-exports[`component | toggle sends the value of next position on space 1`] = `
-<div>
-  <div
-    class="toggle"
-  >
-    <section
-      class="toggle__control"
-    >
-      <div
-        class="toggle__bar"
-      />
-      <label
-        class="screen-reader-only"
-      >
-        Color Mode:
-      </label>
-      <button
-        aria-label="Toggle Color Mode"
-        class="toggle__switch"
-        data-testid="toggle-button"
-        data-toggle-position="0"
-      />
-    </section>
-  </div>
 </div>
 `;

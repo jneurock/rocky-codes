@@ -4,21 +4,30 @@ import ToggleIcons from './icons';
 function getValuePosition(values, value) {
   const position = values.indexOf(value);
 
-  return position === -1 ? 0 : position;
+  return position !== -1 ? position : 0;
 }
 
-export default function Toggle({ id, onChange, value, valueIcons, values }) {
-  const currentPosition = getValuePosition(values, value);
-  const [position, setPosition] = React.useState(currentPosition);
+export default function Toggle({
+  id,
+  label,
+  onChange,
+  selectedValue,
+  valueIcons,
+  values
+}) {
+  const [position, setPosition] = React.useState(0);
 
-  function advancePosition(_e, i) {
+  React.useEffect(
+    () => setPosition(getValuePosition(values, selectedValue)),
+    [selectedValue]
+  );
+
+  function updatePosition(_e, i) {
     const nextPosition = i != null
       ? i
       : position < values.length - 1
         ? position + 1
         : 0;
-
-    setPosition(nextPosition);
 
     onChange(values[nextPosition]);
   }
@@ -27,7 +36,7 @@ export default function Toggle({ id, onChange, value, valueIcons, values }) {
     e.preventDefault();
 
     if (e.keyCode === 13 || e.keyCode === 32) {
-      advancePosition(i);
+      updatePosition(i);
     }
   }
 
@@ -36,7 +45,7 @@ export default function Toggle({ id, onChange, value, valueIcons, values }) {
       <section className="toggle__control">
         <div className="toggle__bar" />
         <label className="screen-reader-only" htmlFor={id}>
-          Color Mode:
+          {label}
         </label>
         <button
           aria-label="Toggle Color Mode"
@@ -44,12 +53,12 @@ export default function Toggle({ id, onChange, value, valueIcons, values }) {
           data-testid="toggle-button"
           data-toggle-position={position}
           id={id}
-          onClick={advancePosition}
+          onClick={updatePosition}
           onKeyDown={handleKey}
         />
       </section>
       <ToggleIcons
-        clickHandler={advancePosition}
+        clickHandler={updatePosition}
         icons={valueIcons}
         keyHandler={handleKey}
         selectedPosition={position}

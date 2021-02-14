@@ -21,47 +21,46 @@ describe('component | toggle', function() {
   });
 
   it('sends the value of next position on click', function() {
-    const { container, getByTestId } = render(
+    const { getByTestId } = render(
       <Toggle onChange={MOCK_ON_CHANGE} values={MOCK_VALUES} />
     );
 
     fireEvent.click(getByTestId('toggle-button'));
 
-    expect(container).toMatchSnapshot();
     expect(MOCK_ON_CHANGE).toHaveBeenCalledWith(MOCK_VALUES[1]);
   });
 
   it('sends the value of first position after clicking last', function() {
-    const { container, getByTestId } = render(
-      <Toggle onChange={MOCK_ON_CHANGE} values={MOCK_VALUES} />
+    const { getByTestId } = render(
+      <Toggle
+        onChange={MOCK_ON_CHANGE}
+        selectedValue="two"
+        values={MOCK_VALUES}
+      />
     );
 
     fireEvent.click(getByTestId('toggle-button'));
-    fireEvent.click(getByTestId('toggle-button'));
 
-    expect(container).toMatchSnapshot();
     expect(MOCK_ON_CHANGE).toHaveBeenCalledWith(MOCK_VALUES[0]);
   });
 
   it('sends the value of next position on enter', function() {
-    const { container, getByTestId } = render(
+    const { getByTestId } = render(
       <Toggle onChange={MOCK_ON_CHANGE} values={MOCK_VALUES} />
     );
 
     fireEvent.keyDown(getByTestId('toggle-button'), { key: 'Enter' });
 
-    expect(container).toMatchSnapshot();
     expect(MOCK_ON_CHANGE).toHaveBeenCalledWith(MOCK_VALUES[1]);
   });
 
   it('sends the value of next position on space', function() {
-    const { container, getByTestId } = render(
+    const { getByTestId } = render(
       <Toggle onChange={MOCK_ON_CHANGE} values={MOCK_VALUES} />
     );
 
     fireEvent.keyDown(getByTestId('toggle-button'), { key: 'Space' });
 
-    expect(container).toMatchSnapshot();
     expect(MOCK_ON_CHANGE).toHaveBeenCalledWith(MOCK_VALUES[1]);
   });
 });
