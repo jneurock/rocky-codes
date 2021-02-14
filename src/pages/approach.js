@@ -5,11 +5,15 @@ import { graphql } from 'gatsby';
 
 export default function About({ data }) {
   const { markdownRemark: { fields, frontmatter: { title }, html } } = data;
+  const metaComponent = <ContentMeta readTime={fields.readingTime.text} />;
 
   return (
-    <Page className="my-approach" html={html} title={title}>
-      <ContentMeta readTime={fields.readingTime.text} />
-    </Page>
+    <Page
+      className="my-approach"
+      html={html}
+      preHeading={metaComponent}
+      title={title}
+    />
   );
 }
 
