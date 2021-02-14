@@ -19,6 +19,8 @@ a {
 }
 
 code {
+  font-size: 1.3rem;
+  
   @include media-lg() {
     font-size: 1.4rem;
   }
