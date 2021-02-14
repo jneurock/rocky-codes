@@ -1,0 +1,39 @@
+.card {
+  background-color: $card-bg-color;
+  border: 1px solid $divider-color;
+  border-radius: $border-radius;
+  width: 28rem;
+
+  a {
+    border: none;
+    color: $fg-color;
+  }
+
+  #{$dark-mode-selector} & {
+    background-color: $card-bg-color-dark-mode;
+
+    a {
+      color: $card-color-dark-mode;
+    }
+  }
+}
+
+.card__body {
+  padding: 1.3rem 2rem 0;
+  
+  p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: $base-bottom-margin;
+
+    &:first-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.card__image {
+  border-radius: $border-radius $border-radius 0 0;
+  display: inline-block;
+  max-width: 100%;
+}

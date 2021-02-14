@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component | toggle renders 1`] = `
+<div
+  className="toggle"
+>
+  <section
+    className="toggle__control"
+  >
+    <div
+      className="toggle__bar"
+    />
+    <label
+      className="screen-reader-only"
+    />
+    <button
+      aria-label="Toggle Color Mode"
+      className="toggle__switch"
+      data-testid="toggle-button"
+      data-toggle-position={0}
+      onClick={[Function]}
+      onKeyDown={[Function]}
+    />
+  </section>
+</div>
+`;

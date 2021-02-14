@@ -1,0 +1,19 @@
+.thought-link {
+  @include link-reset(
+    $color: $link-color-secondary,
+    $hover-color: $link-color-secondary-hover
+  );
+
+  border-bottom-color: $link-color-secondary;
+
+  #{$dark-mode-selector} & {
+    @include link-reset(
+      $color: $link-color-secondary-dark-mode,
+      $hover-color: $link-color-secondary-hover-dark-mode
+    );
+  }
+}
+
+.thought-title {
+  margin-bottom: 1rem;
+}

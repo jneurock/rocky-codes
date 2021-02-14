@@ -1,0 +1,21 @@
+.color-fg {
+  color: $fg-color;
+
+  #{$dark-mode-selector} & {
+    color: $fg-color-dark-mode;
+  }
+}
+
+.color-secondary {
+  color: $color-secondary;
+}
+
+.hide-sm {
+  @include media-sm() {
+    display: none;
+  }
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,7 @@
+.page__heading {
+  margin: 4rem 0;
+
+  #{$dark-mode-selector} & {
+    color: $color-primary;    
+  }
+}

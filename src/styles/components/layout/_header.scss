@@ -1,0 +1,16 @@
+.site-header {
+  margin-bottom: 2rem;
+  padding-top: 7.2rem;
+
+  hr {
+    margin: 0.5rem 0;
+  }
+
+  .toggle {
+    margin: 1rem auto 0;
+
+    @include media-lg() {
+      margin: 3rem 0 0;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.thought-preview {
+  margin-bottom: 6rem;
+
+  &:last-of-type {
+    margin-bottom: 3rem;
+  }
+}
+
+.thought-preview__link {
+  @include link-reset($color: $fg-color, $hover-color: $color-secondary);
+
+  border-bottom-color: $color-secondary;
+  margin-bottom: 1rem;
+
+  #{$dark-mode-selector} & {
+    @include link-reset(
+      $color: $link-color-secondary-dark-mode,
+      $hover-color: $link-color-secondary-hover-dark-mode
+    );
+  }
+}

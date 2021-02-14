@@ -1,0 +1,37 @@
+html {
+  font-size: 10px;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $bg-color;
+  background-image: url("/images/symbols-light.svg");
+  background-repeat: repeat-x;
+  color: $fg-color;
+  font-family: Nunito, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+
+  #{$dark-mode-selector} & {
+    background-color: $bg-color-dark-mode;
+    color: $fg-color-dark-mode;
+    background-image: url("/images/symbols-dark.svg");
+  }
+
+  @include media-lg() {
+    background-position: center top;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  margin-bottom: $section-bottom-margin;
+}

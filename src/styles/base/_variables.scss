@@ -1,0 +1,87 @@
+// Borders
+
+$border-radius: 4px;
+
+// Breakpoints
+
+$breakpoint-lg: 1000px;
+
+// Color mode
+
+$dark-mode-selector: "html[data-color-mode='dark']";
+
+// Raw colors
+
+$blue: #7ca5c3;
+$dark: #212121;
+$dark-shade: #111;
+$dark-tint: #424242;
+$dark-tint-1: #333;
+$light: #fff;
+$light-shade-1: #c1c1c1;
+$light-shade-2: #d1d1d1;
+$light-tint: #f1f1f1;
+$purple: #8e7cc3;
+
+// Colors - https://colors.muz.li/palette/8e7cc3/5e5e88/9a7cc3/7ca5c3/577388
+
+$bg-color: $light-tint;
+$bg-color-dark-mode: $dark;
+$bg-color-secondary: $dark;
+$bg-color-tertiary: $light;
+$bg-color-secondary-dark-mode: $dark-shade;
+$bg-color-tertiary-dark-mode: $dark-tint;
+
+$color-primary: $purple;
+$color-secondary: $blue;
+
+$divider-color: $light-shade-1;
+
+$fg-color-dark-mode: $light-tint;
+$fg-color: $dark;
+$fg-color-dim: lighten($fg-color, 39%);
+$fg-color-secondary: $light-shade-2;
+
+// Cards
+
+$card-color-dark-mode: $fg-color-dark-mode;
+$card-bg-color: $light;
+$card-bg-color-dark-mode: $dark-tint;
+
+// Links
+
+$link-color: darken($color-primary, 15%);
+$link-color-dark-mode: $color-primary;
+$link-color-hover: darken($color-primary, 30%);
+$link-color-hover-dark-mode: lighten($link-color-dark-mode, 7%);
+
+$link-color-secondary: darken($color-secondary, 15%);
+$link-color-secondary-dark-mode: $color-secondary;
+$link-color-secondary-hover: darken($color-secondary, 30%);
+$link-color-secondary-hover-dark-mode: $link-color-secondary;
+
+$nav-item-bg-color: darken($color-primary, 15%);
+$nav-item-bg-color-active: $bg-color-secondary;
+$nav-item-bg-color-active-dark-mode: $bg-color-tertiary-dark-mode;
+$nav-item-bg-color-hover: $color-primary;
+$nav-item-color: $light;
+$nav-item-color-active: $light-tint;
+
+// Preformatted text
+
+$pre-border-color: $light-shade-2;
+$pre-border-color-dark-mode: $dark-tint;
+
+// Spacing
+
+$base-bottom-margin: 1.3rem;
+$section-bottom-margin: 7.2rem;
+
+// Sizing
+
+$max-content-width: 64rem;
+
+// Tables
+
+$table-alt-bg-color: $light;
+$table-alt-bg-color-dark-mode: $dark-tint-1;

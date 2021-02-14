@@ -1,0 +1,41 @@
+// Breakpoints
+
+@mixin media-sm() {
+  @media (max-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin media-lg() {
+  @media (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+// Links
+
+@mixin link-reset($color, $hover-color) {
+  &:active,
+  &:link,
+  &:visited  {
+    color: $color;
+  }
+  
+  border-bottom-color: $color;
+
+  @if $hover-color {
+    &:focus,
+    &:hover {
+      border-bottom-color: $hover-color;
+      color: $hover-color;
+    }
+  }
+}
+
+// Typography
+
+@mixin list-style-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
