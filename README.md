@@ -1,6 +1,6 @@
 # rocky.codes
 
-This codebase powers my professional website [rocky.code](https://rocky.codes).
+This codebase powers my professional website [rocky.codes](https://rocky.codes).
 
 The purpose of this site is for people to get to know me and how I approach
 software development. Check out the [My Approach](https://rocky.codes/apprach)
