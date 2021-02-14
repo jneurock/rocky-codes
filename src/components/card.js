@@ -13,7 +13,7 @@ export default function Card({ description, imageSrc, title, type, url }) {
           <img className="card__image" alt={title} src={imageSrc} />
         </header>
         <section className="card__body">
-          <p className="card__title margin-btm-0">
+          <p>
             <strong>
               {title}
             </strong>
