@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 
 export default function LatestThoughts({ thoughts }) {
   return (
-    <section className="latest-thoughts">
+    <section>
       <header className="margin-btm-2x">
         <h2 className="h4 margin-btm-0">
           Latest <span className="color-secondary">Thoughts</span>

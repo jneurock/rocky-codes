@@ -12,8 +12,10 @@ export default function Index({ data }) {
   return (
     <Layout>
       <Intro />
-      <LatestThoughts thoughts={thoughts} />
-      <FeaturedProjects projects={projects} />
+      <section className="featured-content">
+        <LatestThoughts thoughts={thoughts} />
+        <FeaturedProjects projects={projects} />
+      </section>
     </Layout>
   );
 }
