@@ -16,7 +16,7 @@ I hadn’t used before. Jekyll satisfied that requirement but so did many of the
 [Jamstack](https://jamstack.org) frameworks.
 
 When I started to dig deeper I found Jekyll a bit unintuitive to theme and
-discovered that "Pagination does not support tags or categories". I definitely
+discovered that “Pagination does not support tags or categories”. I definitely
 want the ability to do this so that limitation and the limitations of GitHub
 Pages left me wanting to explore the Jamstack options.
 
@@ -31,8 +31,8 @@ Vue 3.
 #### VuePress
 
 Since I had heard of VuePress before, I started there. After creating an empty
-VuePress site and serving it up, I discovered that its "...default theme [is]
-optimized for writing technical documentation..." and it seemed like it would a
+VuePress site and serving it up, I discovered that its “...default theme [is]
+optimized for writing technical documentation...” and it seemed like it would a
 lot of work to turn it into what I wanted.
 
 #### Gridsome

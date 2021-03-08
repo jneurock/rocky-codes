@@ -34,11 +34,11 @@ shares a simple diagram entitled: The Unit Testing Minimalist.
 | Outgoing | Ignore | Expect to send |
 
 I refer to this diagram frequently and apply it to *every* type of test. Hence
-the title of this post beginning with "Testing" rather than "Unit Testing".
+the title of this post beginning with “Testing” rather than “Unit Testing”.
 
 I can’t remember exactly where I heard her say this, maybe in the above
-mentioned talk, but Sandi once said something like "Most developers write too
-many tests." I have found this to be completely true. In the past, I certainly
+mentioned talk, but Sandi once said something like “Most developers write too
+many tests.” I have found this to be completely true. In the past, I certainly
 wrote too many tests. 
 
 My motivation for writing about this is due to the assertions I encounter when
@@ -188,8 +188,8 @@ component.
 A bit similar to the idea of testing object state, I also often see code that
 asserts something about the state or behavior of a 3rd party dependency.
 
-**Note:** I’m including things like backend servers in the term "3rd party
-dependencies".
+**Note:** I’m including things like backend servers in the term “3rd party
+dependencies”.
 
 <p class="margin-btm-0">
   I’ve seen the temptation to mock or assert 3rd party dependencies result in a
@@ -213,12 +213,12 @@ a realistic prototype.
 
 I understand how easy it is to think about adding this behavior in a testing
 context but it doesn’t add value, only complexity and the headache of writing
-your own server-side logic. If you’re in the mindset of "I’m mocking my server"
+your own server-side logic. If you’re in the mindset of “I’m mocking my server”
 then it’s easy to assume you need to mock every type of interaction with it.
 
 If we think of a search page as a unit, and apply the rules of the Unit Testing
-Minimalist, we realize we only need to assert the outgoing command: "Sort this"
-or "filter this". What the server does with that information is beyond the scope
+Minimalist, we realize we only need to assert the outgoing command: “Sort this”
+or “filter this”. What the server does with that information is beyond the scope
 of our search page.
 
 <p class="margin-btm-0">
