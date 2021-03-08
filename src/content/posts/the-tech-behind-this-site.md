@@ -1,5 +1,10 @@
 ---
 date: 2021-02-05
+excerpt:
+ "When I set out to create this site, I knew I wanted some technology that made
+ it easy for me to write posts in Markdown. One of my first thoughts was to set
+ up GitHub Pages, create a Jekyll site and write away. Ultimately, I decided on
+ Gatsby."
 path: "/thoughts/tech-behind-this-site"
 title: "The Tech Behind This Site"
 ---

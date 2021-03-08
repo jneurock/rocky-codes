@@ -22,7 +22,7 @@ export default function ThoughtPreview({ content }) {
       </header>
       <section>
         <p>
-          {content.excerpt}
+          {content.frontmatter.excerpt || content.excerpt}
         </p>
       </section>
     </article>
