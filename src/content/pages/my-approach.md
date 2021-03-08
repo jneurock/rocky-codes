@@ -32,11 +32,11 @@ the disconnect?
 
 #### Breaking Things Down
 
-Let me define "people-centric" and "sustainable".
+Let me define “people-centric” and “sustainable”.
 
 ##### People-centric
 
-By "people-centric", I mean an approach where team members’ foundational needs
+By “people-centric”, I mean an approach where team members’ foundational needs
 are met and always remain a high priority. This is so important that sometimes
 we need to take a break from developing and shipping software to get back on
 track; a frightening concept for a lot of people I’ve encountered. But
@@ -96,8 +96,8 @@ opportunities for more people to apply their expertise.
 
 ##### Sustainable
 
-By "sustainable", I mean good for the long-term. I once had an Engineering
-Director who would often say "We have to move slow to move fast." It was kind of
+By “sustainable”, I mean good for the long-term. I once had an Engineering
+Director who would often say “We have to move slow to move fast.” It was kind of
 funny, and often confused people, but I knew what he meant. We need to take the
 time to build solid foundations, if we want to build quality software, quickly,
 in the future.
@@ -130,7 +130,7 @@ parts of the system can become vulnerable or hard to maintain.
 
 ##### Lifecycle of Engineers
 
-"Handling the lifecycle of engineers on the team" refers to the amount of time
+“Handling the lifecycle of engineers on the team” refers to the amount of time
 engineers can stay at the organization. I’ve yet to see any organization that
 offers endless, sustainable career growth opportunities and paths for their
 engineers.
@@ -208,14 +208,14 @@ to the content that helps inform better software design.
 
 ##### Uncovering the Problems Being Solved
 
-I’m using the term "uncovering" here because that’s what it feels like when I
+I’m using the term “uncovering” here because that’s what it feels like when I
 learn about features of languages, frameworks and tools. Similar concepts across
 different tool sets often have different names but exist to solve the same
 problems. Learning about which features exist in a framework is pointless, if
 you don’t know what problem they’re solving.
 
-"[React](https://reactjs.org) has hooks" or "[Go](https://golang.org) has
-concurrency primitives", for example, are useless pieces of information, if you
+“[React](https://reactjs.org) has hooks” or “[Go](https://golang.org) has
+concurrency primitives”, for example, are useless pieces of information, if you
 don’t know what problems they solve. In other words, these are solutions and
 solutions mean there are problems to understand.
 
@@ -255,8 +255,8 @@ you plan for change, you’re also planning for success. You’re helping your
 future self and your future teammates.
 
 It’s with this goal in mind that I measure the quality of my code now by asking
-myself "Is this code easy to change?" and it’s a good feeling when I can answer
-a resounding "Yes."
+myself “Is this code easy to change?” and it’s a good feeling when I can answer
+a resounding “Yes.”
 
 ##### Testing
 
