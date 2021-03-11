@@ -18,6 +18,43 @@ a {
   }
 }
 
+blockquote {
+  background-color: $blockquote-bg-color;
+  border-top: 1px solid $color-primary;
+  color: $blockquote-fg-color;
+  margin: 5.4rem 0 5.4rem;
+  padding: 2.4rem 4rem;
+  position: relative;
+
+  #{$dark-mode-selector} & {
+    background-color: $dark-tint-1;
+    color: $fg-color-dark-mode;
+  }
+
+  p {
+    font-family: $serif-family;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    margin: 0;
+  }
+}
+
+.blockquote__badge {
+  background-color: $blockquote-badge-bg-color;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: $color-primary;
+  font-size: 3.5rem;
+  font-weight: 800;
+  height: 3rem;
+  left: -1.5rem;
+  margin: 0 50%;
+  position: absolute;
+  text-align: center;
+  top: -1.5rem;
+  width: 3rem;
+}
+
 code {
   font-size: 1.3rem;
   

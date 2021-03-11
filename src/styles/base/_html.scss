@@ -13,7 +13,7 @@ body {
   background-image: url("/images/symbols-light.svg");
   background-repeat: repeat-x;
   color: $fg-color;
-  font-family: Nunito, sans-serif;
+  font-family: $sans-family;
   font-size: 1.7rem;
   font-weight: 400;
 

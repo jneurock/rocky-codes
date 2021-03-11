@@ -12,9 +12,9 @@ function, again.
 But I failed.
 
 As I started building, I found myself focusing too much on aesthetics, as usual.
-I started to feel frustrated with myself. I asked myself "Why can’t I just write
+I started to feel frustrated with myself. I asked myself “Why can’t I just write
 a bunch of content and then build a site around it? This is how more productive
-people do things, right?"
+people do things, right?”
 
 Then a thought popped into my head that never had in all the years I’ve been
 creating websites:

@@ -25,7 +25,7 @@ export const pageQuery = graphql`
   query ThoughtsQuery {
     allMarkdownRemark(
       filter: { frontmatter: { path: { regex: "/^\/thoughts/" } } },
-      limit: 6,
+      limit: 10,
       sort: { order: DESC, fields: [frontmatter___date] },
     ) {
       edges {
@@ -39,6 +39,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             date(formatString: "YYYY-MM-DD")
+            excerpt
             path
             title
           }
