@@ -26,9 +26,9 @@ relationship between
 [pull request (PR)](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
 author and reviewer.
 
-All of the following examples run the risk of the author ignoring feedback
-entirely or feeling antagonized by the reviewer. Either case can lead to the
-author avoiding the reviewer in the future or feeling unsafe opening PRs.
+The problems highlighted in this post run the risk of an author ignoring
+feedback entirely or feeling antagonized by a reviewer. Either case can lead to
+an author avoiding a reviewer in the future or feeling unsafe opening new PRs.
 
 Note: No judgement is intended for any PR reviewers out there. Most of the
 observations I’m sharing in this post have come from my own experiences giving
@@ -71,15 +71,15 @@ and it still puts a burden on the author to figure out what to do.
 </p>
 
 1. The word “probably” makes it hard for the author to understand if the change
-is important or necessary but it’s likely the reviewer is definitely asking for
-a change. It could be the reviewer trying to be nice and take a softer approach
-but that likely won’t come across to the author.
+is important or necessary but it’s likely the reviewer is *definitely* asking
+for a change. It could be that the reviewer is trying to be nice and take a
+softer approach but that probably won’t come across to the author.
 1. There’s no indication of what the reviewer thinks should be done instead. It
 could be that the reviewer wants to start a conversation but this isn’t obvious.
-In the worst cases an author may try to refactor their code without any help and
-introduce a new problem or they may ignore this type of feedback, entirely.
+In the worst cases, authors take vague feedback and try to refactor their code
+without telling anyone. This often leads to new, different problems.
 
-An example of some less vague feedback:
+An example of more clear feedback:
 
 <p class="margin-btm-2x">
   <picture>
@@ -99,8 +99,8 @@ An example of some less vague feedback:
 
 I’ve seen a lot of reviewers hint at the code changes they’d like to see from
 authors. This can be ok, especially if the reviewer and author have agreed to
-this style of communication; however, hints often feel patronizing and if some
-hint goes over the author’s head, time gets wasted seeking clarification.
+this style of communication; however, unsolicited hints often feel patronizing.
+If some hints go over an author’s head, time gets wasted seeking clarification.
 
 <p class="margin-btm-2x">
   <picture>
@@ -117,7 +117,7 @@ hint goes over the author’s head, time gets wasted seeking clarification.
 </p>
 
 I can understand the temptation to leave hints, you don’t want to take away
-someone’s opportunity to figure things out themselves, but unless they
+someone’s opportunity to figure things out for themselves, but unless they
 specifically ask for hints, this is a big assumption. When in doubt, there’s no
 harm in asking: “Would you prefer if I give you hints about code changes or just
 ask for them directly?”
@@ -178,16 +178,23 @@ An example of more direct feedback which outlines some problems:
   </picture>
 </p>
 
-Note: Another case can happen when a reviewer recognizes an issue with a code
+##### Side Effects
+
+Another case can happen when a reviewer recognizes an issue with a code
 change and starts thinking about side effects. It can be easy to focus on those
-side effects and communicate about them instead of the underlying problem.
+side effects and communicate about them instead of the underlying problem, e.g.,
+“These code changes lower our code quality score.” 
+
+Instead of communicating about the code quality score, which *implies* some
+problematic code, a reviewer should identify the questionable code and teach a
+higher quality alternative to the author.
 
 #### Teach, Don’t Tell
 
 As a reviewer, you should avoid dogma and, when possible, teach the reasoning
 behind your feedback. Telling an author which changes to make may result in the
 code you want but runs a big risk of teaching them nothing and resulting in the
-same uninformed decisions in the future.
+same or similarly uninformed decisions in the future.
 
 I find the best teaching comes directly from experienced team members. If you
 can clearly and concisely explain why an author should change their code, they
@@ -197,7 +204,7 @@ Directing authors to articles, documentation, Google, or even books, places a
 time-consuming burden on them and runs the risk that they won’t derive the
 knowledge you expect them to after consuming the material.
 
-That said, it should be totally fine and helpful if a resource teaches something
+That said, it should be totally fine to share a resource that teaches something
 perfectly. If you can say “This article perfectly captures my thoughts” or “I
 couldn’t say it any better myself” then the resource is probably ok to share as
 long as the connection to the code changes and outcome you’d like is clear.
@@ -209,12 +216,13 @@ long as the connection to the code changes and outcome you’d like is clear.
 
 If you don’t know what other people intend by their words and actions, you can
 only guess. If you’re playing the role of reviewer, it really helps to state
-your intentions. I like to qualify my code review comments by stating how I
-intend my feedback to be received. 
+your intentions. I like to qualify my feedback by stating how I intend it to be
+received. 
 
-I often find myself starting out some feedback with “This is not a blocker…”,
-“This is take it or leave it…” or “Don’t feel the need to change this unless you
-want to…”.
+When I don’t think the author necessarily needs to make code changes, I often
+find myself starting out some feedback with “This is not a blocker…”, “This is
+take it or leave it…” or “Don’t feel the need to change this unless you want
+to…”
 
 With more critical feedback, I aim for the same level of clarity, e.g., “This
 code introduces a bug…”, “This can’t be merged until…”, etc.
@@ -223,9 +231,9 @@ Note: In either case, the ”Teach, Don’t Tell“ approach should still apply.
 
 Flipping things around, I also find it very helpful to state your assumptions.
 As a reviewer, if you don’t know the author’s intentions, you can only guess. A
-lot of time gets wasted when a reviewer assumes an author’s intent or goals,
-asks for changes based on that assumption and then has a lot of back and forth
-discussion while *not* being on the same page.
+lot of time gets wasted when a reviewer assumes an author’s intent or goals and
+asks for changes based on that assumption. A lot of back and forth discussion
+ensues while *not* being on the same page.
 
 <blockquote>
   <div class="blockquote__badge">“</div>
@@ -238,8 +246,8 @@ discussion while *not* being on the same page.
 Starting some feedback with something like “I assume you’re trying to solve *x*
 problem with *y* solution. In that case, I’d like to suggest…” is a great way to
 avoid misunderstandings early. If you state your assumptions up front,
-and your assumption is incorrect, the author can clear things up right away and
-avoid wasteful back and forth discussions.
+and they’re incorrect, the author can clear things up right away and avoid
+wasteful back and forth discussions.
 
 <h3 id="speak-from-your-perspective">
   Speak From Your Perspective
@@ -286,13 +294,13 @@ or similarly large issues go or put a pin in them.
 </p>
 
 * If you ask for many small changes and some get missed, ask yourself if there’s
-time for the author to clean up anything left. If not, try to let it go.
+time for the author to clean up anything left over. If not, try to let it go.
 * If you encounter a conflict of code style but no standard* has been set, let
 it go. Asking for a change in this state could result in reverting it once a
 standard has been set.
 * Sometimes, medium-sized changes, e.g., refactoring a solution, don’t need to
 happen right away. In these cases, take the time to document what needs to be
-done and even see if you can schedule it as soon as possible.
+done and see if you can schedule it as soon as possible.
 
 #### * Automate Your Standards
 
@@ -304,10 +312,13 @@ It may seem like a lot of work up front but I’ve seen too many cases of
 long-lived teams paying the cost of not standardizing early, even to the point
 of crippling themselves and delaying the shipment of every feature.
 
+A note on standards: I feel fairly confident that some standard is far better
+than no standard but watch out for choosing standards that can be hard to change
+later.
+
 ---
 
-Improving on the above examples has saved me a lot of time over the years and
-helped me build better relationships with PR authors, even those with whom I
-don’t frequently interact. Hopefully, you can also apply some of these
-suggestions to your own PR feedback and see good results. Feel free to share
-your own tips on better code reviews with me.
+Improving my own feedback has saved me a lot of time over the years and helped
+me build better relationships with PR authors, even those with whom I don’t
+frequently interact. Hopefully, you can also apply some of these suggestions to
+your own PR feedback and see good results.
