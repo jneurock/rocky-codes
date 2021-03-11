@@ -17,6 +17,7 @@ $dark: #212121;
 $dark-shade: #111;
 $dark-tint: #424242;
 $dark-tint-1: #333;
+$dark-tint-2: #757575;
 $light: #fff;
 $light-shade-1: #c1c1c1;
 $light-shade-2: #d1d1d1;
@@ -41,6 +42,18 @@ $fg-color-dark-mode: $light-tint;
 $fg-color: $dark;
 $fg-color-dim: lighten($fg-color, 39%);
 $fg-color-secondary: $light-shade-2;
+
+// Fonts
+
+$sans-family: Nunito, sans-serif;
+$serif-family: RobotoSlab, serif;
+
+// Blockquote
+
+$blockquote-badge-bg-color: $light;
+$blockquote-bg-color: $light;
+$blockquote-bg-color-dark-mode: $bg-color-tertiary-dark-mode;
+$blockquote-fg-color: $dark-tint-2;
 
 // Cards
 

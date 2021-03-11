@@ -40,6 +40,12 @@ export default function FontLoader() {
         as="font"
         crossOrigin
       />
+      <link 
+        rel="preload"
+        href="/fonts/RobotoSlab/RobotoSlab-Light.ttf"
+        as="font"
+        crossOrigin
+      />
     </Helmet>
   );
 }

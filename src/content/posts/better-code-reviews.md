@@ -227,6 +227,14 @@ lot of time gets wasted when a reviewer assumes an author’s intent or goals,
 asks for changes based on that assumption and then has a lot of back and forth
 discussion while *not* being on the same page.
 
+<blockquote>
+  <div class="blockquote__badge">“</div>
+  <p>
+    I assume you’re trying to solve <em>x</em> problem with <em>y</em> solution.
+    In that case, I’d like to suggest…
+  </p>
+</blockquote>
+
 Starting some feedback with something like “I assume you’re trying to solve *x*
 problem with *y* solution. In that case, I’d like to suggest…” is a great way to
 avoid misunderstandings early. If you state your assumptions up front,
@@ -249,6 +257,13 @@ your interpretations.
 For example, a comment like “The team would have a hard time maintaining this
 code” is subjective and debatable. What‘s often the case is that these types of
 statements are true for the person saying them.
+
+<blockquote>
+  <div class="blockquote__badge">“</div>
+  <p>
+    I have a hard time understanding this code.
+  </p>
+</blockquote>
 
 Better feedback would describe the problem from the reviewer’s perspective,
 e.g., ”I have a hard time understanding this code.” When we speak from our own
