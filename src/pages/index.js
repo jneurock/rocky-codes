@@ -24,7 +24,7 @@ export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
       filter: { frontmatter: { path: { regex: "/^\/thoughts/" } } },
-      limit: 3,
+      limit: 5,
       sort: { order: DESC, fields: [frontmatter___date] },
     ) {
       edges {
