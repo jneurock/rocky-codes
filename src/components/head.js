@@ -9,7 +9,7 @@ export default function Head({ meta = {} }) {
   const imageSrc = `${siteMeta.siteUrl}/${image || siteMeta.image}`;
   const pageTitle = title ? `${siteMeta.title} - ${title}` : siteMeta.title;
   const pageDescription = (description || siteMeta.description)
-    .replace(/\n/g, '');
+    .replace(/\n/g, ' ');
 
   return (
     <>
