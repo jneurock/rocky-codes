@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedinIn as linkedInIcon,
   faGithub as gitHubIcon,
-  faTwitter as twitterIcon
+  faMastodon as mastodonIcon
 } from '@fortawesome/free-brands-svg-icons';
 
 export default function SocialMenu() {
@@ -19,18 +19,18 @@ export default function SocialMenu() {
       </li>
       <li className="site-footer__social-menu-item">
         <a
-          href="https://github.com/jneurock"
-          title="Find me on GitHub"
+          href="https://mas.to/@neurock"
+          title="Follow me on Mastodon"
         >
-          <FontAwesomeIcon icon={gitHubIcon} />
+          <FontAwesomeIcon icon={mastodonIcon} />
         </a>
       </li>
       <li className="site-footer__social-menu-item">
         <a
-          href="https://twitter.com/rockyneurock"
-          title="Follow me on Twitter"
+          href="https://github.com/jneurock"
+          title="Find me on GitHub"
         >
-          <FontAwesomeIcon icon={twitterIcon} />
+          <FontAwesomeIcon icon={gitHubIcon} />
         </a>
       </li>
     </ul>
