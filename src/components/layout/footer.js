@@ -9,13 +9,12 @@ export default function Footer() {
       >
         <div className="content site-footer__description">
           <p>
-            I&rsquo;m an experienced software development lead and web app
-            developer living in Berlin. I enjoy leading teams, mentoring and
-            growing developers, working on web app infrastructure and API
-            design and building tools for my teams and organizations.
+            I&rsquo;m an experienced, people-centric software engineering leader
+            currently living in Sweden. Great experiences &mdash; for my team
+            and their users &mdash; are what drive me.
           </p>
           <p className="margin-btm-0">
-            &copy; 2021 - Rocky Neurock
+            &copy; Rocky Neurock
           </p>
         </div>
         <div className="site-footer__connect">
