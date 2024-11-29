@@ -52,5 +52,8 @@
   },
   "bugs": {
     "url": "https://github.com/jneurock/rocky-codes/issues"
+  },
+  "engines": {
+    "node": ">= 10.13.0 <=12.18.0"
   }
 }
